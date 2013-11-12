@@ -65,8 +65,8 @@ For fish-shell users, add the full path to share/fish/completions to
 $fish_complete_path.
 
 
-TUF
-----
+TUF THE UPDATE FRAMEWORK
+-----------------------
 
 Install TUF through pip:
 
@@ -77,8 +77,8 @@ Generate TUF metadata:
 Follow the instructions to generate TUF metadata from the [TUF-wiki](http://theupdateframework.com/projects/project/wiki/Docs/overview)
 
 
-QUICK START
------------
+INSTALLATION
+------------
 
 To install [Edit](http://rox.sourceforge.net/2005/interfaces/Edit) and name it 'rox-edit':
 
@@ -133,6 +133,7 @@ For more information, see the man-page for 0install and [the 0install.net web-si
 
 GENERATING METADATA IN TUF
 --------------------------
+
 Please follow the steps to generate metadat for the zero install package. 
 
 [Steps](https://docs.google.com/document/d/1nYnsICtOz88mh2S7x5vjIgcKHrngcM6NJ95oJwf724Q/edit#)

@@ -140,7 +140,7 @@ def download_in_thread(url, target_file, if_modified_since, notify_done):
 				#Using TUF interposition for Python 3. Returns the package fetched
 				doc = urllib4.urlopen(url)
 			except Exception,e:
-				print (e)
+				raise (e)
 		else:
 			#Python 2
 			try:

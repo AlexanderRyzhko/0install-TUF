@@ -131,3 +131,11 @@ To view or change configuration settings:
 For more information, see the man-page for 0install and [the 0install.net web-site](http://0install.net/).
 
 
+GENERATING METADATA IN TUF
+--------------------------
+Please follow the steps to generate metadat for the zero install package. 
+
+[Steps](https://docs.google.com/document/d/1nYnsICtOz88mh2S7x5vjIgcKHrngcM6NJ95oJwf724Q/edit#)
+
+
+

@@ -1,7 +1,5 @@
-0install
-========
-
-Copyright Thomas Leonard and others, 2012
+0install-TUF
+============
 
 INTRODUCTION
 ------------
@@ -67,20 +65,16 @@ For fish-shell users, add the full path to share/fish/completions to
 $fish_complete_path.
 
 
-OCAML
------
+TUF
+----
 
-You can make 0install run faster by building the OCaml source to generate a faster
-version of the "0install" executable. This binary can handle common tasks by itself,
-falling back to the Python version in other cases.
+Install TUF through pip:
 
-This is experimental.
+    $ sudo apt-get install python-pip
+    $ sudo pip install tuf
 
-You will need the OCaml build tools for this. On Debian:
-
-    $ sudo apt-get install ocaml ocaml-findlib libyojson-ocaml-dev libxmlm-ocaml-dev
-    $ make ocaml
-    $ sudo make install
+Generate TUF metadata:
+Follow the instructions to generate TUF metadata from the [TUF-wiki](http://theupdateframework.com/projects/project/wiki/Docs/overview)
 
 
 QUICK START
@@ -137,25 +131,3 @@ To view or change configuration settings:
 For more information, see the man-page for 0install and [the 0install.net web-site](http://0install.net/).
 
 
-CONDITIONS
-----------
-
-This library is free software; you can redistribute it and/or
-modify it under the terms of the GNU Lesser General Public
-License as published by the Free Software Foundation; either
-version 2.1 of the License, or (at your option) any later version.
-
-This library is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-Lesser General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public
-License along with this library; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA
-
-
-BUG REPORTS
------------
-
-Please report any bugs to [the mailing list](http://0install.net/support.html).

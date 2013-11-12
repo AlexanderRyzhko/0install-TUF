@@ -7,6 +7,15 @@ from zeroinstall import _
 from zeroinstall.injector import download
 from zeroinstall.support import ssl_match_hostname
 
+import tuf.interposition
+
+from tuf.interposition import urllib_tuf as urllib3
+from tuf.interposition import urllib2_tuf as urllib4
+
+tuf.interposition.configure(filename="/usr/local/lib/python2.7/dist-packages/zeroinstall/injector/tuf.interposition.json")
+
+
+
 if sys.version_info[0] > 2:
 	from urllib import request as urllib2
 	from http.client import HTTPSConnection, HTTPException, IncompleteRead
@@ -82,28 +91,36 @@ for klass in [urllib2.ProxyHandler, urllib2.UnknownHandler, urllib2.HTTPHandler,
 def download_in_thread(url, target_file, if_modified_since, notify_done):
 	"""@type url: str
 	@type target_file: file"""
+	'''
+	This is the function inside which a resource with a specified url is downloaded
+	'''
 	src = None
 	try:
-		#print "Child downloading", url
+		#print ("Download url", url)
+		
 		if url.startswith('http:') or url.startswith('https:') or url.startswith('ftp:'):
-			req = urllib2.Request(url)
-			if url.startswith('http:') and if_modified_since:
-				req.add_header('If-Modified-Since', if_modified_since)
-			src = _my_urlopen.open(req)
+			#req = urllib2.Request(url)
+			#if url.startswith('http:') and if_modified_since:
+			#	req.add_header('If-Modified-Since', if_modified_since)
+			#src = _my_urlopen.open(req)
+			pass
+			
 		else:
 			raise Exception(_('Unsupported URL protocol in: %s') % url)
-
+		'''
 		if sys.version_info[0] > 2:
 			# Python 3
-			while True:
-				try:
-					data = src.read(256)
-				except IncompleteRead as ex:
-					data = ex.partial
-				if not data: break
-				target_file.write(data)
-				target_file.flush()
+			#while True:
+			#	try:
+			#		data = src.read(256)
+			#	except IncompleteRead as ex:
+			#		data = ex.partial
+			#	if not data: break
+			#	target_file.write(data)
+			#	target_file.flush()
+						
 		else:
+			#print "Child downloading\n"
 			try:
 				sock_recv = src.fp._sock.recv	# Python 2
 			except AttributeError:
@@ -113,8 +130,37 @@ def download_in_thread(url, target_file, if_modified_since, notify_done):
 				if not data: break
 				target_file.write(data)
 				target_file.flush()
+				#print (os.path.abspath(target_file.name))
 
+		'''
+		doc=None
+		if sys.version_info[0] > 2:
+			#Python 3
+			try:
+				#Using TUF interposition for Python 3. Returns the package fetched
+				doc = urllib4.urlopen(url)
+			except Exception,e:
+				print (e)
+		else:
+			#Python 2
+			try:
+				#Using TUF interpostition for Python 2. Returns the package fetched
+				doc = urllib3.urlopen(url)
+			except Exception,e:
+				raise e
+		#Write the data from the package fetched by TUF to 0install target file					
+		while True:
+			try:
+				#Read data 256 bytes at a time. This is an optmization in case of large packages
+				data = doc.read(256)
+			except IncompleteRead as ex:
+				data = ex.partial
+			if not data: break
+			target_file.write(data)
+			target_file.flush()
+		
 		notify_done(download.RESULT_OK)
+		
 	except (urllib2.HTTPError, urllib2.URLError, HTTPException, socket.error) as ex:
 		if isinstance(ex, urllib2.HTTPError) and ex.code == 304: # Not modified
 			notify_done(download.RESULT_NOT_MODIFIED)

@@ -1,0 +1,11 @@
+[2013-11-19 21:25:18,844 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:8001/metadata/timestamp.txt
+[2013-11-19 21:25:18,850 UTC] [tuf.download] [WARNING][_check_content_length:589@download.py] reported_length (1198) < required_length (2048)
+[2013-11-19 21:25:18,850 UTC] [tuf.download] [WARNING][_check_downloaded_length:656@download.py] Downloaded 1198 bytes, but expected 2048 bytes. There is a difference of 850 bytes!
+[2013-11-19 21:25:18,870 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:8001/targets/foo/FooBar-0.1.tar.gz
+[2013-11-19 21:25:18,883 UTC] [tuf.client.updater] [INFO][__check_hashes:624@updater.py] The file's sha256 hash is correct: 61625f9ddd7a4435dfcb9d66b7e96416f86acf3c450967f69415de0de6848063
+[2013-11-19 21:25:18,884 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:8001/targets/foo/FooBar-0.3.tar.gz
+[2013-11-19 21:25:18,887 UTC] [tuf.client.updater] [INFO][__check_hashes:624@updater.py] The file's sha256 hash is correct: bb665d22164cbeab00686dbc01a41124e55fe2971259d68e4e8533d16d79370e
+[2013-11-19 21:25:18,888 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:8001/targets/foo/FooBar-0.2.tar.gz
+[2013-11-19 21:25:18,891 UTC] [tuf.client.updater] [INFO][__check_hashes:624@updater.py] The file's sha256 hash is correct: 1d9c3ddb6d9c367e6dc4b84bdeb1f83484eac12974fe5f92154f57eb6017ee53
+[2013-11-19 21:25:18,892 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:8001/targets/foo/foo.xml
+[2013-11-19 21:25:18,896 UTC] [tuf.client.updater] [INFO][__check_hashes:624@updater.py] The file's sha256 hash is correct: 57e8c5f56fb19642890abf84a8df7f88a27429bb81aa4e683d3b27beb78e8992

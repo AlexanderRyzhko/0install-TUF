@@ -21,6 +21,9 @@ list_of_targets = repository.get_filepaths_in_directory("path/to/repository/targ
 # that may already exist are NOT replaced.  add_targets() does not create or move target files.
 repository.targets.add_targets(list_of_targets)
 
+# Individual target files may also be added.
+#repository.targets.add_target("path/to/repository/targets/file3.txt")
+
 # The private key of the updated targets metadata must be loaded before it can be signed and
 # written (Note the load_repository() call above).
 private_targets_key =  import_rsa_privatekey_from_file("path/to/targets_key")
@@ -58,20 +61,17 @@ private_unclaimed_key = import_rsa_privatekey_from_file("path/to/unclaimed_key")
 
 repository.targets.unclaimed.load_signing_key(private_unclaimed_key)
 
-
 repository.targets.unclaimed.delegate("foo", [public_unclaimed_key], [],
                                       restricted_paths=["path/to/repository/targets/foo/"])
 repository.targets.unclaimed.foo.load_signing_key(private_unclaimed_key)
-repository.targets.unclaimed.foo.add_target("path/to/repository/targets/foo/foo.xml")
-repository.targets.unclaimed.foo.add_target("path/to/repository/targets/foo/FooBar-0.1.tar.gz")
-repository.targets.unclaimed.foo.add_target("path/to/repository/targets/foo/FooBar-0.2.tar.gz")
-repository.targets.unclaimed.foo.add_target("path/to/repository/targets/foo/FooBar-0.3.tar.gz")
 
 
-repository.targets.remove_target("path/to/repository/targets/foo/foo.xml")
-repository.targets.remove_target("path/to/repository/targets/foo/FooBar-0.1.tar.gz")
-repository.targets.remove_target("path/to/repository/targets/foo/FooBar-0.2.tar.gz")
-repository.targets.remove_target("path/to/repository/targets/foo/FooBar-0.3.tar.gz")
+list_of_delegated_targets = repository.get_filepaths_in_directory("path/to/repository/targets/",
+                                                        recursive_walk=True, followlinks=True) 
 
+for target in list_of_delegated_targets:
+	repository.targets.unclaimed.foo.add_target(target)
+	repository.targets.remove_target(target)
+	
 repository.write()
 

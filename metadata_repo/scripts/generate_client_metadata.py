@@ -11,4 +11,4 @@ from tuf.libtuf import *
 # directory to store TUF updates saved on the client side.  create_tuf_client_directory()
 # moves metadata from "path/to/repository/metadata" to "path/to/client/".  The repository
 # in "path/to/repository/" is the repository created in the "Create TUF Repository" section.
-create_tuf_client_directory("path/to/repository/", "path/to/client/")
+create_tuf_client_directory("/var/www", "./client")

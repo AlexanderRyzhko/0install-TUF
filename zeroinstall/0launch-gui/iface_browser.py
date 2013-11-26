@@ -1,6 +1,7 @@
 # Copyright (C) 2009, Thomas Leonard
 # See the README file for details, or visit http://0install.net.
 
+#File has been modified to check for endless data attack
 import gtk, pango
 
 from zeroinstall import _, translation
@@ -12,6 +13,7 @@ from zeroinstall import support
 from logging import warn, info
 import utils
 from gui import gobject
+from sys import exit
 
 ngettext = translation.ngettext
 
@@ -548,11 +550,21 @@ class InterfaceBrowser(object):
 					if dl.expected_size:
 						expected = (expected or 0) + dl.expected_size
 					so_far += dl.get_bytes_downloaded_so_far()
+
+					#Code added to check endless data
+					if expected:
+						if so_far > expected:
+							dl.abort()
+							raise Exception("Download aborted as size exceeded expected")
+							exit(1)
+					#End of additional code
+					
+										
 				if expected:
 					summary = ngettext("(downloading %(downloaded)s/%(expected)s [%(percentage).2f%%])",
-							   "(downloading %(downloaded)s/%(expected)s [%(percentage).2f%%] in %(number)d downloads)",
-							   downloads)
+							   "(downloading %(downloaded)s/%(expected)s [%(percentage).2f%%] in %(number)d cdownloads)",downloads)
 					values_dict = {'downloaded': pretty_size(so_far), 'expected': pretty_size(expected), 'percentage': 100 * so_far / float(expected), 'number': len(downloads)}
+									
 				else:
 					summary = ngettext("(downloading %(downloaded)s/unknown)",
 							   "(downloading %(downloaded)s/unknown in %(number)d downloads)",

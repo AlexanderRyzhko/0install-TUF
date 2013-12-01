@@ -44,7 +44,7 @@ path_to_timestamp_key = checkKey(path_to_release_key)
 
 
 #there are 2 weeks, there 2 folders that get toggeled every week
-targets_path = targets_path[:-1] + str(int(week) % 2) +'/'
+targets_path = targets_path + str(int(week) % 2) +'/'
 
 
 

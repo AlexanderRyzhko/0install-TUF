@@ -80,12 +80,12 @@ Generally, a software update system is an application (or part of an application
 
 What does TUF protect against?
 
-Key revocation
-External dependencies 
-Arbitrary package attacks
-Slow retrieval attacks
-Endless data attacks
-Freeze attack
+Key revocation,
+External dependencies, 
+Arbitrary package attacks,
+Slow retrieval attacks,
+Endless data attacks,
+Freeze attack,
 
 TUF INSTALLATION
 ----------------

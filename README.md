@@ -87,15 +87,20 @@ Slow retrieval attacks
 Endless data attacks
 Freeze attack
 
-Install TUF through pip:
+TUF INSTALLATION
+----------------
+
+TUF Update framework can be installed through PIP.
 
     $ sudo apt-get install python-pip
     $ sudo pip install tuf
 
+
 See [the TUF website](http://theupdateframework.com/projects/project/wiki/Docs/overview) for more details.
 
-TUF INSTALLATION
-----------------
+
+INSTALLATION OF ROX ON 0install + TUF
+-------------------------------------
 
 To install [Edit](http://rox.sourceforge.net/2005/interfaces/Edit) and name it 'rox-edit':
 
@@ -144,3 +149,10 @@ To see where things have been stored:
 To view or change configuration settings:
 
     $ 0install config
+
+
+
+
+
+
+

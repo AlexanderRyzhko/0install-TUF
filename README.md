@@ -1,8 +1,8 @@
 0install-TUF
 ============
 
-INTRODUCTION
-------------
+0install INTRODUCTION
+---------------------
 
 Zero Install is a decentralised cross-distribution software installation system
 available under the LGPL. It allows software developers to publish programs
@@ -37,8 +37,8 @@ installed by their distribution, which continue to be used for other software.
 See [the 0install.net web-site](http://0install.net/) for full details.
 
 
-INSTALLATION
-------------
+0install INSTALLATION
+---------------------
 
 Zero Install uses the normal Python distutils method of installation. To
 install system-wide, run setup.py like this:
@@ -64,21 +64,38 @@ your $fpath (e.g. /usr/local/share/zsh/site-functions).
 For fish-shell users, add the full path to share/fish/completions to
 $fish_complete_path.
 
-
 TUF THE UPDATE FRAMEWORK
------------------------
+========================
+
+TUF INTRODUCTION
+----------------
+
+A Framework for Securing Software Update Systems
+
+TUF (The Update Framework) helps developers secure their new or existing software update systems. Software update systems are vulnerable to many known attacks, including those that can result in clients being compromised or crashed. TUF helps solve this problem by providing a flexible security framework that can be added to software updaters.
+
+What Is a Software Update System?
+
+Generally, a software update system is an application (or part of an application) running on a client system that obtains and installs software. This can include updates to software that is already installed or even completely new software.
+
+What does TUF protect against?
+
+Key revocation
+External dependencies 
+Arbitrary package attacks
+Slow retrieval attacks
+Endless data attacks
+Freeze attack
 
 Install TUF through pip:
 
     $ sudo apt-get install python-pip
     $ sudo pip install tuf
 
-Generate TUF metadata:
-Follow the instructions to generate TUF metadata from the [TUF-wiki](http://theupdateframework.com/projects/project/wiki/Docs/overview)
+See [the TUF website](http://theupdateframework.com/projects/project/wiki/Docs/overview) for more details.
 
-
-INSTALLATION
-------------
+TUF INSTALLATION
+----------------
 
 To install [Edit](http://rox.sourceforge.net/2005/interfaces/Edit) and name it 'rox-edit':
 
@@ -127,14 +144,3 @@ To see where things have been stored:
 To view or change configuration settings:
 
     $ 0install config
-
-For more information, see the man-page for 0install and [the 0install.net web-site](http://0install.net/).
-
-
-GENERATING METADATA IN TUF
---------------------------
-
-To be added...
-
-
-

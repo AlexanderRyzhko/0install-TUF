@@ -9,7 +9,7 @@ from tuf.libtuf import *
 repo_path = "/var/www"
 targets_path = "/var/www/targets/"
 
-#tagetKey_path = "/var/www/targets_key"
+#keys should be off-line, example path to USB stick
 path_to_target_key = "/root/keys/targets_key"
 path_to_root_key = "/root/keys/root_key"
 path_to_root_key2 = "/root/keys/root_key2"

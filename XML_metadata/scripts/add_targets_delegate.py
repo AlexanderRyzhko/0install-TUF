@@ -4,6 +4,11 @@ Add the targets to unclaimed
 '''
 #from datetime import *
 from tuf.libtuf import *
+import distutils.core
+
+# copy subdirectory example
+fromDirectory = "/var/www/metadata.staged"
+toDirectory = "/var/www/metadata"
 
 
 repo_path = "/var/www"
@@ -75,6 +80,8 @@ repository.targets.load_signing_key(private_targets_key)
 # to generate a valid set of metadata.
 private_root_key = import_rsa_privatekey_from_file(path_to_root_key)
 
+
+
 private_root_key2 = import_rsa_privatekey_from_file(path_to_root_key2)
 
 private_release_key = import_rsa_privatekey_from_file(path_to_release_key)
@@ -89,5 +96,8 @@ repository.timestamp.load_signing_key(private_timestamp_key)
 
 # Generate new versions of all the top-level metadata.
 repository.write()
+distutils.dir_util.copy_tree(fromDirectory, toDirectory)
+
+
 
 

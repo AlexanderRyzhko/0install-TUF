@@ -123,7 +123,7 @@ More information about the roles:
 1. Root: The root role signs for itself here
 2. Target: The target role signs for xml feed files
 3. Release:  The release role signs a metadata file that provides information about the
-   latest version of all of the other metadata on the repository(0install + TUF don't actually use this; it maintains by xml. But we don't want to update TUF framework)
+   latest version of all of the other metadata on the repository(0install + TUF don't actually use this; it maintains by    xml. But we don't want to update TUF framework)
 4. Timestamp: To prevent an adversary from replaying an out-of-date signed metadata file
    whose signature has not yet expired
 
@@ -289,7 +289,7 @@ There are two main problems that arise here with the implementation of 0install 
 Developer uploads the new xml files to a secure folder on 0install. Every fortnight when the update needs to be pushed the TUF metadata is generated and pushed to production from dev environment.
 
 2. What happens if a client downloads files during an update?
-If the feed files are getting updated and the client is interrupted in that case. We are propose to have a sleep function so if the feed files are being replaced, the user does not get a bad hash error. So 0install tries to get the XML after sleep and continues the download.
+If the feed files are getting updated and the client is interrupted in that case. We are propose to have a sleep function on client so if the feed files are being replaced, the user does not get a bad hash error. So 0install client tries to get the XML after shorted sleep and continues the download.
 
 
 SECURITY OF 0install + TUF 
@@ -307,7 +307,7 @@ One of the important aspects that we need to look at is how well TUF and 0instal
 
 One initial results are good. 0install + TUF works well. 
 
-The overhead that is created by implementing zero install with TUF is very negligible, right now the XML file that the user has to download to launch a package is around 2.5KB. We also calculated that the average size of the TUF metadata is 2 KB or 2.5 KB per package so the total size of the file that the user would have to download would be 2.5 KB + 2 KB * n where n is number of packages. With current 150 application 302.5 KB will have to be downloaded. 
+The overhead that is created by implementing 0install with TUF is very negligible, right now the XML file that the user has to download to launch a package is around 2.5KB. We also calculated that the average size of the TUF metadata is 2 KB or 2.5 KB per package so the total size of the file that the user would have to download would be 2.5 KB + 2 KB * n where n is number of packages. With current 150 application 302.5 KB will have to be downloaded. 
 
 In the future:
-With greater number of application targets (XMLs) can be split in bins (path_hashed) lowering amount of data needed for downloading (considering scalability).
+With greater number of application targets (XMLs) can be splitted into bins (path_hashed) to lower amount of metadata needed for downloading (considering scalability).

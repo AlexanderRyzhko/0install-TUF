@@ -1,0 +1,510 @@
+{
+ "signatures": [
+  {
+   "keyid": "4c9e1a622ea2dc9dd5ed8e45bbca0987a73fb6c51550bd94ee101f713f53c572", 
+   "method": "PyCrypto-PKCS#1 PSS", 
+   "sig": "110072e5e0bf30b0249bfb379a442119e21fa174faa2df8a62be99460f112f4ccbafdab4e3516aff3df663ab0af9a2313cd0b78053967cedfb583838d5edff04ad6ae3d8fc5915c22d2466d68067fb4f9f5fd14b93497088a4e470ca4bef3c3d473d9b9b93a89f72e07a1471e60ddcff198c8415ed8a78a061d0fbb95e31d9cbcbdef9152d7e24c6fa7a0fc59d7e93779a93c9ebc98564bc407e649b07eab1e7b3dfb654af318495759cf495348e7acd2fafa73f97ed6a5f69b759d3ca64fbc34cd6674a2f0d715a3b9038aa708b5b48c68e2f5735a86f68bdb8daf1cb1cc8992ff16600a768fac192fa2b514d9690ecfb68137ea33ab1bbda1dcb3a5b33630e7e8225e5742e5c5222d2f67b7c8a0dda2e0f7038d9106234bb8bd1e94bca71740d08f9b39b4b352ce292809a1dd4e676c55de2bac46b1cec296dfbad9ebc7a6f0165225f313e6c7ca1a2010111e3c177b4637791033b9fa2f4952dc68ef3a1a3cfd4ba4cb0888ee8e2c67488b71adfe3d345670e6b84c78738bc02afe695f737"
+  }, 
+  {
+   "keyid": "4c9e1a622ea2dc9dd5ed8e45bbca0987a73fb6c51550bd94ee101f713f53c572", 
+   "method": "PyCrypto-PKCS#1 PSS", 
+   "sig": "a5bd979d9a5fe7b86fbfed1dc21a4cf3538cadba0009dd6a4789f2b4166d82916328b070b36082c70ddcc5043f911a5b1e6aa15a5035c2faf03af7431d1ffad4b1f8fa9e6a75148d869ea9e118fc0f1af2b730b09dd3b1569d8dc91f3b60c58912c2d80ffd468dbc47f2310dd6bee100af25c4c604b978d1cecfa41671bb10070a3eb0eb8f301d63c164f1211666cbc2a56a8b6a3068a927921060f1cfabb0e50ab27ce13d1450e4804b56d585c351ce1e1384e7e67004a1b0c003bf02ebbb51934f6c6f56033d39384e118b3daab695eeaf2bf22fdd73889b809d7a4c773a91449129c299b72d3f4b3b75cfea9acd3dde19095ef8b5835879c34a5d51974bfc0da4c7dd3d57a3d39bab5a2af29b10e3c9f0b64fb1df8f3224b01f32643ecf8ab6346fec16d15be0a7afcf23388694712dfea092178e94ddfde9202f2f9b7c1da804aa5048e0475e820e933677e516d838e832d0ba8776952b5165d8f868c2d4f19ba19b22bc204a09726cae4d8aed6f632ebbdc1e66464885db1425e0d6c36e"
+  }, 
+  {
+   "keyid": "4c9e1a622ea2dc9dd5ed8e45bbca0987a73fb6c51550bd94ee101f713f53c572", 
+   "method": "PyCrypto-PKCS#1 PSS", 
+   "sig": "6b6652489d882211e91165727e135c6ac33ae51cbe732c80df623333b117b26bf30b816ba29055d123c6f7b9b39541a91549b7f5cc9a920d621f61f73a2a3b4f80e39ab946b1cbf41d3f99c60338ae93ab40c67ab55dd77deb9ba57d7982a8f300b41101d673a4ee256ebf6e84fada2debe86a6ebca5483ce2e2772007da6c667fed994d74c428cf541943e6b49b95a676fdf4c3926bee1860609e4bea71fa107d717d06c85d61c63d1909dc71d87c66478da550dd81110329e6d0caec6925a12e4974cc8cc06a2e10c036409f10c4c781e9ef49fee1b93b1836f0785ff720e177f355d96d308c6b2fc92b8b9bb71a059520e7129afbe911fd9ede7e9ae2d1a0a4a3e730285115ab1640f700be9af3125ba389d8678e5443dfd3e7db29b727b7c0cee03c1d2497d8c3c5326cfcf45703baf0138ff9ef6072586f6e54e65b44cb4a2672cc333c2b334d391bf0b893e5dce09f8ff35999c2b3dde5c20116d9d858835a0637ce6fe6fd185d30d0f73bfc0f429585c97feb4075462e8cd9c72907e2"
+  }
+ ], 
+ "signed": {
+  "_type": "Targets", 
+  "delegations": {
+   "keys": {}, 
+   "roles": []
+  }, 
+  "expires": "2014-03-05 02:41:00 UTC", 
+  "targets": {
+   "Apache_Maven.xml": {
+    "hashes": {
+     "sha256": "066a94f4f8fb789dd723dbe0903a1b9a2f876174383551cce81ef9645aa8c75d"
+    }, 
+    "length": 3693
+   }, 
+   "Audacity.xml": {
+    "hashes": {
+     "sha256": "3cb686d4f2c32fce3760a1385807fd1b11c6974477758c20236b825dfd376310"
+    }, 
+    "length": 10951
+   }, 
+   "Avidemux.xml": {
+    "hashes": {
+     "sha256": "15766d28c3f20f5f603d36ccabdeae6f36dcd5f86703571ae39a3fe0259404b5"
+    }, 
+    "length": 10719
+   }, 
+   "Blender.xml": {
+    "hashes": {
+     "sha256": "5e7d0f974a5d8af994c07cd9c5ade09648f329533b2e1f454dea4e9e433bc013"
+    }, 
+    "length": 67369
+   }, 
+   "Boo.xml": {
+    "hashes": {
+     "sha256": "2662a4a01d90fa2c43979753a1d8f750d25db2c56ca07325194b16926d381bcf"
+    }, 
+    "length": 5109
+   }, 
+   "CDBurnerXP.xml": {
+    "hashes": {
+     "sha256": "11e06263baf4682c9b2634d23764bfd807073d4d528c2789a0761abaa37b53d3"
+    }, 
+    "length": 14914
+   }, 
+   "Celestia.xml": {
+    "hashes": {
+     "sha256": "0327bb9caba0fee5e23414b0473c355ee27e6f94006adf6078baad995bceb51e"
+    }, 
+    "length": 2445
+   }, 
+   "Clementine.xml": {
+    "hashes": {
+     "sha256": "f139ea4acc1ad36194e4626ef961cf1db335f9c817e416dc4f288eb6ebb97aeb"
+    }, 
+    "length": 7819
+   }, 
+   "DCPlusPlus.xml": {
+    "hashes": {
+     "sha256": "c4189ea9e3b63ed0c5b237850f9b93f3832b7931d8b7e54a733bde8898708855"
+    }, 
+    "length": 5695
+   }, 
+   "DDT.xml": {
+    "hashes": {
+     "sha256": "8b29a9a8cfafb6767993fca3688005ba8bd49d3f8f6155255a97502d3032d3d1"
+    }, 
+    "length": 2594
+   }, 
+   "DOSBox.xml": {
+    "hashes": {
+     "sha256": "89b130137205a7ff3da17a0b255a9256df77d70913ca146df757e6de1e90fbef"
+    }, 
+    "length": 2699
+   }, 
+   "DVDStyler.xml": {
+    "hashes": {
+     "sha256": "2f951f592cfc7e8416c6dd795b7e28a84a6a508f43240108ea39ea8f1ddc76ac"
+    }, 
+    "length": 2776
+   }, 
+   "Eclipse.xml": {
+    "hashes": {
+     "sha256": "7cb7ed49481c017e35971cfdbc9695a7109098821611b598ed277617e73cbd7d"
+    }, 
+    "length": 5591
+   }, 
+   "Eclipse_Java.xml": {
+    "hashes": {
+     "sha256": "b4aa83704213e6bc2a38c8fe19c798f9fcdb2ed5d37c8e4864dc8798bc242ea0"
+    }, 
+    "length": 9256
+   }, 
+   "FLVExtract.xml": {
+    "hashes": {
+     "sha256": "17fab22293c3b08fac96e09495114111dde18341c5bde8794d71ce9fd6e70f67"
+    }, 
+    "length": 2527
+   }, 
+   "FileZilla.xml": {
+    "hashes": {
+     "sha256": "63cf7486b0b0bdf7fa57dba55688cd7c67bd0587d4b58f30af1f9710eda17808"
+    }, 
+    "length": 83686
+   }, 
+   "Frogatto.xml": {
+    "hashes": {
+     "sha256": "d372c60b4cd8940f6a0c7fed00a4d81ba4e967870d355a6f10faf404e5df3768"
+    }, 
+    "length": 3075
+   }, 
+   "GCFScape.xml": {
+    "hashes": {
+     "sha256": "f1c98e249e31c98decbcfae7e3ed6676a27d40d9aa6c85b1f35d8eef98f4a47d"
+    }, 
+    "length": 4173
+   }, 
+   "GIMP.xml": {
+    "hashes": {
+     "sha256": "d13837a5629d247dfb72e5ce11631af5dd61a2f534f2b8cba01bfe3a5e8c8132"
+    }, 
+    "length": 18109
+   }, 
+   "GTK.xml": {
+    "hashes": {
+     "sha256": "fe0d8b6d72833dd7ce18d33d9e9d74514d92a500ce7e81fc5579f0767f53f2d2"
+    }, 
+    "length": 1808
+   }, 
+   "GnuPG.xml": {
+    "hashes": {
+     "sha256": "d60b2ef49e5448b2ab9e0e7c1e6999afa12da9afea623e02227bff9affceaad6"
+    }, 
+    "length": 2805
+   }, 
+   "Golly.xml": {
+    "hashes": {
+     "sha256": "dffbc21dab0aa526db2972325af88edfc1475050512f0669198974411c3031a7"
+    }, 
+    "length": 17302
+   }, 
+   "Gow.xml": {
+    "hashes": {
+     "sha256": "bf2e78e6251e326f6933c1b0c90dcfca0a9c322733711ad81164c741a3831a19"
+    }, 
+    "length": 13448
+   }, 
+   "GraphCalc.xml": {
+    "hashes": {
+     "sha256": "0c32e712c8b3bf133e08a3a0e236dc20e8e51b8110e30be7fc4250d33b4a3457"
+    }, 
+    "length": 3224
+   }, 
+   "Gtk-Sharp.xml": {
+    "hashes": {
+     "sha256": "9ef805b2e77e14144b0d056352673fbac2178463079c1af7ff742c6634ff7be2"
+    }, 
+    "length": 1416
+   }, 
+   "HDGraph.xml": {
+    "hashes": {
+     "sha256": "126023a739c8cfea24b919b6a84e91f535200b16cf3af4c5ade0cf44ba9de868"
+    }, 
+    "length": 3249
+   }, 
+   "IconsExtract.xml": {
+    "hashes": {
+     "sha256": "e010423a24e9932a5ae025f2e45b35de5ce706119eb7d93a00f11e8c9116d79e"
+    }, 
+    "length": 2380
+   }, 
+   "Inkscape.xml": {
+    "hashes": {
+     "sha256": "d8867e34e8f386edf1a93d9018108cb2fca0a76a29ecf029b1d1f1bc1ca1c270"
+    }, 
+    "length": 3378
+   }, 
+   "IronPython.xml": {
+    "hashes": {
+     "sha256": "737049b6a3ca1103d455333120de42c70cc9830d0db95aabe611128622a8a56e"
+    }, 
+    "length": 5726
+   }, 
+   "KeePass_Classic.xml": {
+    "hashes": {
+     "sha256": "9cf401626a00e302149e5a68cedc5d2af56464a5a2aa4ccb9542aebb2400fa92"
+    }, 
+    "length": 29138
+   }, 
+   "KeePass_Pro.xml": {
+    "hashes": {
+     "sha256": "65b941ffa1a9c084ead475fbbadd5cd3fcb57a91f075cd87129731318c5f914c"
+    }, 
+    "length": 17666
+   }, 
+   "LibreOffice.xml": {
+    "hashes": {
+     "sha256": "f55efec03f7daf48ab5335916ed5e2a02cb50dcfc43aaa42b5236479c39e7093"
+    }, 
+    "length": 30672
+   }, 
+   "Lynx.xml": {
+    "hashes": {
+     "sha256": "95593b1f68824cd931a40496b045ab0dd9c37069e9499a2e7abc143b51de2e54"
+    }, 
+    "length": 1976
+   }, 
+   "M4AExtract.xml": {
+    "hashes": {
+     "sha256": "adb854c81c85fe605ccbfacb041a1239cdde9754ca041d49dfbf1395b7ac1809"
+    }, 
+    "length": 2672
+   }, 
+   "MP4Box.xml": {
+    "hashes": {
+     "sha256": "8d88e13f526c0b8f2f54e09c0e0353674338af844ab384c4d174d025173428cc"
+    }, 
+    "length": 1886
+   }, 
+   "MPC-HC.xml": {
+    "hashes": {
+     "sha256": "5a1444706b31bcd125135055fe7d4c602695b242f70358d57c6cb075ade4369b"
+    }, 
+    "length": 31926
+   }, 
+   "MSVC100.xml": {
+    "hashes": {
+     "sha256": "3b58874a2cff214cbcb153c6225cff6f3ff933d1d927913afeb2c8d2ccc74f7f"
+    }, 
+    "length": 1514
+   }, 
+   "MSVC71.xml": {
+    "hashes": {
+     "sha256": "a213cac148e284d1ec16489be0cfb1ef1c5bdf21e73def3268ae26b4953d1fd1"
+    }, 
+    "length": 1509
+   }, 
+   "Mediathek.xml": {
+    "hashes": {
+     "sha256": "e3428934af6ff32e6c74b51e8b20c567f09d211ee2970461111d01fcdc2a9f01"
+    }, 
+    "length": 9462
+   }, 
+   "NAnt.xml": {
+    "hashes": {
+     "sha256": "cf24989695c519750c4004e7ea92e706e8d34bb0c8d51434e37bd097fb103dd1"
+    }, 
+    "length": 3386
+   }, 
+   "NetBeans_All.xml": {
+    "hashes": {
+     "sha256": "8973d4238d2be01899a926639a8c86a7d82d695f988733edbec6301266e41d7c"
+    }, 
+    "length": 26420
+   }, 
+   "NetBeans_All_Scala.xml": {
+    "hashes": {
+     "sha256": "dddec7988d56da3db329e57647ab5b95f74d5a39918d5ed500d2b08ce5798fc2"
+    }, 
+    "length": 2236
+   }, 
+   "NetBeans_CPP.xml": {
+    "hashes": {
+     "sha256": "066bd40ea4c543439a0569e6565a9b928b5f7e92a4aa9bacff03889298b668b8"
+    }, 
+    "length": 26626
+   }, 
+   "NetBeans_Java_EE.xml": {
+    "hashes": {
+     "sha256": "a06dd744e269b0b6abd342eebbc3fb164d98da294c813486d39a64173dbe4fcd"
+    }, 
+    "length": 26827
+   }, 
+   "NetBeans_Java_SE.xml": {
+    "hashes": {
+     "sha256": "80b5ae60306abe741192186275569b37e1e1064375a14a698cd4ab68b76a9bd2"
+    }, 
+    "length": 26817
+   }, 
+   "NetBeans_PHP.xml": {
+    "hashes": {
+     "sha256": "183ead0739d9d3059054cb8992560ba4669e320cc0f5e967c91948b0ad5c95d6"
+    }, 
+    "length": 26615
+   }, 
+   "Nmap.xml": {
+    "hashes": {
+     "sha256": "031b696e6f4b186b2c93634a9b89b644369283f506c6d94d5756509a3a29e869"
+    }, 
+    "length": 5721
+   }, 
+   "NotepadPlusPlus.xml": {
+    "hashes": {
+     "sha256": "116b516f3f6899ca8da5fba0f82e66d06221c97d12375eab0a9030f70d666a1e"
+    }, 
+    "length": 9991
+   }, 
+   "OpenJDK.xml": {
+    "hashes": {
+     "sha256": "52e414980ee36ccbe065aab4ff826ef16c8a4aff6ac87c539bcd636f4c120e51"
+    }, 
+    "length": 3045
+   }, 
+   "Oracle_JRE.xml": {
+    "hashes": {
+     "sha256": "9f0a0d63bddd3d9a8892745c41be3153cbe2d0acd0b5ce607e5c23035ef8bfe1"
+    }, 
+    "length": 6212
+   }, 
+   "PDFsam.xml": {
+    "hashes": {
+     "sha256": "0d0ec2ce5c38d2cb85f72edc8fbf9c7d47df48e9c2771df2279c34f8d05ead3f"
+    }, 
+    "length": 2852
+   }, 
+   "Pidgin.xml": {
+    "hashes": {
+     "sha256": "cdd7d2354af46010e4425d799bd6cd337f8626fe232037df31301fb0f261f6db"
+    }, 
+    "length": 10529
+   }, 
+   "ProduKey.xml": {
+    "hashes": {
+     "sha256": "1fd9145c47393d0156290756996c791c4ece49ca13ea8128390db83afcb6286d"
+    }, 
+    "length": 2897
+   }, 
+   "PuTTY.xml": {
+    "hashes": {
+     "sha256": "bb496219bb4bd1c16843c5d9259a0d6c644474c865dd215405981850786f941b"
+    }, 
+    "length": 9523
+   }, 
+   "Python.xml": {
+    "hashes": {
+     "sha256": "2f87a2bb216d290afecdc41800c585eb4ab58dcf34db2b803e4526ce1e084713"
+    }, 
+    "length": 3015
+   }, 
+   "Scala.xml": {
+    "hashes": {
+     "sha256": "ac58916ef7b604a067969590e63188ef6c3d9834be2ea0fcdc9ee6ffc5801e67"
+    }, 
+    "length": 7722
+   }, 
+   "ScummVM.xml": {
+    "hashes": {
+     "sha256": "af25352e5fdc9bc99efeae5552da52515507d8658a0d6f04eb3b72c57a9cea88"
+    }, 
+    "length": 15405
+   }, 
+   "SevenZip_CLI.xml": {
+    "hashes": {
+     "sha256": "005b52406c7ca8af825a6796e80690c6479d7ac7e9f18d769ec27539131665a4"
+    }, 
+    "length": 3620
+   }, 
+   "TightVNC.xml": {
+    "hashes": {
+     "sha256": "39fa980ce78ee0cdb1fdfed87fa390bc048c61eb1f86bfff1b6d6a57d17d78a6"
+    }, 
+    "length": 4241
+   }, 
+   "UltraVNC.xml": {
+    "hashes": {
+     "sha256": "a06f8b86122c991d139f6ea32018ccdff8eb617fa322ce07fd98c411cee0f19e"
+    }, 
+    "length": 4842
+   }, 
+   "VLC.xml": {
+    "hashes": {
+     "sha256": "81b6e1926b0a5ae80ceba83e092ac31711b49465db606189630ad86d97de2990"
+    }, 
+    "length": 89013
+   }, 
+   "VirtualDub.xml": {
+    "hashes": {
+     "sha256": "1d920fb4aebff4509ca47f6d411941df54b7a9f5fd8173f721c2f0f58c314dd2"
+    }, 
+    "length": 3743
+   }, 
+   "WinMerge.xml": {
+    "hashes": {
+     "sha256": "9a26d4524701d99d5a22b6626a75df5f65f747f7829e6b62eed7393c3698c216"
+    }, 
+    "length": 10343
+   }, 
+   "WinSCP.xml": {
+    "hashes": {
+     "sha256": "8b74cf34112635580b7d228d352f21f5eadaf49f5fea8b678511e6f2388a3f20"
+    }, 
+    "length": 17898
+   }, 
+   "Zenmap.xml": {
+    "hashes": {
+     "sha256": "0e9b60b47259e7b3c5293eb3c16096cf93129c90781415f5920845aa15d95a41"
+    }, 
+    "length": 2087
+   }, 
+   "ZeroInstall.xml": {
+    "hashes": {
+     "sha256": "2ad3290b88d18a6e853045080aefc24a7ece4cda4312c4e519f662bc865f48e2"
+    }, 
+    "length": 18503
+   }, 
+   "ZeroInstall_Tools.xml": {
+    "hashes": {
+     "sha256": "29564df776956d9e2166c2a757be662d73ff83f498975c6bb7c4b5e4aaa5647d"
+    }, 
+    "length": 9865
+   }, 
+   "ZeroInstall_Updater.xml": {
+    "hashes": {
+     "sha256": "ececfdb53bfb9972b92c47ae5f3ada5b4c5e648426d7bc8de450940ff293bf40"
+    }, 
+    "length": 2549
+   }, 
+   "aria2.xml": {
+    "hashes": {
+     "sha256": "b02833bc326455c2a506b2edcc94f2dae34137e20f63dc14115807779a69ef4f"
+    }, 
+    "length": 10471
+   }, 
+   "dotPeek.xml": {
+    "hashes": {
+     "sha256": "dceec66cc4f43f5d08ecec640c4598c16981e1c3ab2b5cebf7f0679fa0d59d39"
+    }, 
+    "length": 3235
+   }, 
+   "flvstreamer.xml": {
+    "hashes": {
+     "sha256": "f15181c1c125fd8a5e0f29f1d3d4b1e5caf4a9e9d19946f36e1e68dcc81d4919"
+    }, 
+    "length": 2929
+   }, 
+   "foobar.xml": {
+    "hashes": {
+     "sha256": "f332a350eef5869494bc69d282724dbc7671fbe2ea2100cba3b876c08ea6c29e"
+    }, 
+    "length": 1060
+   }, 
+   "gnuplot.xml": {
+    "hashes": {
+     "sha256": "fd0d266b409ff9d3b3d48b0f3e25f285ce94ba8018e3e72fddd81207b66a9405"
+    }, 
+    "length": 2573
+   }, 
+   "jar-launcher.xml": {
+    "hashes": {
+     "sha256": "fe9bbe91a88dd402b3bca03ce9ea841898a4ae38445afb4801ddc19c6afa2ab9"
+    }, 
+    "length": 2154
+   }, 
+   "make-dep.xml": {
+    "hashes": {
+     "sha256": "ba5faa147474cfe98b0e81344cf3e16f8949e4f80005705a0ce8275916bfc90d"
+    }, 
+    "length": 1289
+   }, 
+   "make.xml": {
+    "hashes": {
+     "sha256": "22a6d5ff2f012ebced46d3d791f0a608704178b10fd734ba3102670e93fb100a"
+    }, 
+    "length": 1994
+   }, 
+   "msysgit.xml": {
+    "hashes": {
+     "sha256": "bdd3d823a4c3e7e5fcf37f22b2b0d30f515461af9fb4f83410a138153b6bd965"
+    }, 
+    "length": 2218
+   }, 
+   "pngcrush.xml": {
+    "hashes": {
+     "sha256": "cd4077ba5201900c2c454a9f1701e9d1fb9c7eca8df95cb4788cc2f51fc1608a"
+    }, 
+    "length": 1533
+   }, 
+   "xz.xml": {
+    "hashes": {
+     "sha256": "af3b3e44300c6a2fa2da2dc92fa3be5dc8d5ba6d4e41a997650de720a4b35942"
+    }, 
+    "length": 4004
+   }, 
+   "yEd.xml": {
+    "hashes": {
+     "sha256": "3505b1f1393c0548dad9dec84c9e4489c2515820bb09906f3cfd78721a161e0e"
+    }, 
+    "length": 3548
+   }
+  }, 
+  "version": 1
+ }
+}

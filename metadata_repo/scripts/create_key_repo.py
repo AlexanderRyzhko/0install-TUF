@@ -60,7 +60,7 @@ repository.root.add_key(public_root_key)
 
 # Add a second public key to the root role.  Although previously generated and saved to a file,
 # the second public key must be imported before it can added to a role.
-public_root_key2 = import_rsa_publickey_from_file()
+public_root_key2 = import_rsa_publickey_from_file(path_to_root_key_public2)
 repository.root.add_key(public_root_key2)
 
 # Threshold of each role defaults to 1.   Users may change the threshold value, but libtuf.py

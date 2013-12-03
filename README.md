@@ -286,10 +286,10 @@ CONSISTENCY OF 0install + TUF
 There are two main problems that arise here with the implementation of 0install and TUF
 
 1. How do files get updated?
-0install will take care of the TUF metadata and also generates and updates the metadata for all the packages that it hosts. The updates have to be done every fortnight. During the update, all service files will be shutdown to prevent client download file. The downtime should be less then a second; The uptime is more than 99.9999 percents. When a developer makes changes to his package and updates the XML. 0install will be have to replace the XML file and regenerate the metadata for that XML. 
+0install will take care of the TUF metadata and also generates and updates the metadata for all the packages that it hosts. The updates have to be done every fortnight. When a developer makes changes to his package and updates the XML. 0install will be have to replace the XML file and regenerate the metadata for that XML. 
 
 2. What happens if a client downloads files during an update?
-We are not too concerned about this, as current there are roughly 80 odd applications on the feeds URL and the 0install update every fortnight should not take a long time. So if a user is interrupted in the process of updating a package he can just restart the process. 
+On client site, during the update, if client failed to download file on the first time, client will download the file againg after 5 seconds; it will prevent client get wrong packet in case 0install is replacing new xml. 
 
 
 SECURITY OF 0install + TUF 

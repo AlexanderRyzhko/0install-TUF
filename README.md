@@ -86,7 +86,7 @@ External dependencies,
 Arbitrary package attacks,  
 Slow retrieval attacks, 
 Endless data attacks, 
-Freeze attack, 
+Freeze attack.
 
 TUF INSTALLATION
 ----------------

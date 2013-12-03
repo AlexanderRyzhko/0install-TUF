@@ -112,7 +112,7 @@ Check the following [wiki page] (https://github.com/AlexanderRyzhko/0install-TUF
 
 A brief description on how 0install + TUF works.
 
-![0install+TUF](https://github.com/AlexanderRyzhko/0install-TUF/blob/master/Images/TUF_metadata.jpg)
+![0install+TUF](/Images/TUF_metadata.jpg)
 The following diagram shows how the roles handled by TUF and how the keys are managed. 
 
 More information about the roles:

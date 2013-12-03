@@ -144,7 +144,7 @@ KEY MANAGEMENT
 --------------
 
 1. Offline keys
-The root and the target roles are going to be signed by the offline keys, so that an attacker will not be able to compromise and push updates as the developer. 
+The root, release and the target roles are going to be signed by the offline keys, so that an attacker will not be able to compromise and push updates as the developer or point user to only old updates.
 
 2. Online keys
 The timestamp and the release roles are signed by the online keys. These keys are stored on the 0install server. If 0install is compromised, then the attacker will be able to read the online keys. 

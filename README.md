@@ -182,7 +182,7 @@ Please follow the steps given on the [wiki page] (https://github.com/AlexanderRy
 MODIFICATIONS TO 0install
 -------------------------
 
-We have to make some changes to 0install as only the XML Feed file download is configured with TUF metadata and the package downloads 
+We have to make some changes to 0install with the integration of TUF, the changes are mentioned below:
 
 1. Endless data attack
 TUF was not able to protect from this attack as only the XML was downloaded through TUF and not the whole package. So to protect from this attack we modified the download code so that it terminates the download after 100% and does not proceed after that. 

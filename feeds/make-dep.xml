@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://0install.de/feeds/make-dep.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>make dependencies</name>
+	<summary xml:lang="en">libraries for make</summary>
+	<group arch="Windows-i486" license="GPL v2 (GNU General Public License)">
+		<implementation version="3.81" stability="stable" id="sha1new=f042c9abb8ce530006066d4f4659dd64b0c347db">
+			<manifest-digest sha1new="f042c9abb8ce530006066d4f4659dd64b0c347db" sha256="8c143d3532b5884689a1237c465f23ddcbba7971e7a2ae638dafb392ebd68b0f" sha256new="RQKD2NJSWWEENCNBEN6EMXZD3XF3U6LR46RK4Y4NV6ZZF26WRMHQ" />
+			<archive href="http://downloads.sourceforge.net/gnuwin32/make-3.81-dep.zip" type="application/zip" size="708206" />
+		</implementation>
+	</group>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJQEDbPAAoJEIWg8Nq0buZoz0QH/j53QYzkhhNfRaVK+PoU9ZSCHGqdBy/IXYQksiBDk2MFle3gKprPUc1C3wb4oFuhZciCc2rGVJgar4QJkz/YLOKLaBOcrebnp16SPyHuWVbBWvwKqmZa59oUmYA40BRtc/2y6KUUmEH1M2a/+j7YBST53YJhuPcZvNtQ5xbzIA14yG/KJVQgZDa6b2N+zOksfR979g5S5/ekkv98c30XSrV0jdtFoKabDr8ED/0qg8SaENHJ+7cjnbdRazKK7jb8XeLifvnwiKaChN6OQpfm/MrfnH2eO7AzEKJQSfK0SWYJohgBBci2T6pTH/x9XHBHd1GwbgoM0DYMMZwJ7T5b/LM=
+
+-->

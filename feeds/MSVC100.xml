@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://0install.de/feeds/MSVC100.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>Microsoft Visual C++ 2010 Runtimes</name>
+	<summary xml:lang="en">runtime components of Visual C++ Libraries</summary>
+	<description xml:lang="en">This package contains the runtime components required by applications compiled with Visual C++ 2010.</description>
+	<homepage>http://www.microsoft.com/</homepage>
+	<group arch="Windows-i486">
+		<implementation version="10.0.40219.325" released="2011-06-11" stability="stable" id="sha1new=0eaf193154db736fb1bbed370777a790af5f842f">
+			<manifest-digest sha1new="0eaf193154db736fb1bbed370777a790af5f842f" sha256="9f1356124b290deede48acb04df4104a6b704f55a3534fb66926c08b5ab59f8c" sha256new="T4JVMESLFEG65XSIVSYE35AQJJVXAT2VUNJU7NTJE3AIWWVVT6GA" />
+			<archive href="http://0install.de/files/hosted/msvc100.tar.bz2" type="application/x-bzip-compressed-tar" size="575542" />
+		</implementation>
+	</group>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJQ3e2vAAoJEIWg8Nq0buZoRtoH/3wSTUwfYC6MJ4gBnZp6epPXy651jVhE5X3JmOG2LL4DT8XlzUdwNhlcxLEuxB3Fdg2mlODdUFildjY8tgRUCYQ3qNu3wq327T+10Kxibfox8Jzjz+xx8TLj71+Q68JiELAK9NztvdPGjh24LQSK7meY3ZnaRk2NKFboaflb4JjQ0BP5Il7jh9yJ3PKSZlk4UTb9DfgggqP+0RU7J560ljK+jJSZ00k49LVD2/NnSbZlwU+XJOIEFSBo6yqYClgi6mIBNsqKpA4VLx3o6DvvBr4B0mlPIadWpKoM5bTjaw7MD/mUzgf5Ox4Jptm7717jhbPwDu2S1sj1yLto7mfxaVc=
+
+-->

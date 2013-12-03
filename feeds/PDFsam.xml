@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://zero-install.sourceforge.net/2004/injector/interface http://0install.de/schema/injector/interface/interface.xsd http://0install.de/schema/desktop-integration/capabilities http://0install.de/schema/desktop-integration/capabilities/capabilities.xsd" uri="http://0install.de/feeds/PDFsam.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>PDF Split and Merge</name>
+	<summary xml:lang="en">split and merge PDF documents</summary>
+	<homepage>http://www.pdfsam.org/</homepage>
+	<icon href="http://0install.de/feeds/images/PDFsam.png" type="image/png" />
+	<icon href="http://0install.de/feeds/images/PDFsam.ico" type="image/vnd.microsoft.icon" />
+	<category>Office</category>
+	<category>Utility</category>
+	<group>
+		<command name="run">
+			<arg>-Xmx256m</arg>
+			<arg>-classpath</arg>
+			<arg>$PDFSAMJAR</arg>
+			<arg>org.pdfsam.guiclient.GuiClient</arg>
+			<runner interface="http://repo.roscidus.com/java/openjdk-jre" />
+		</command>
+		<command name="console">
+			<arg>-Xmx256m</arg>
+			<arg>-Dlog4j.configuration=console-log4j.xml</arg>
+			<arg>-classpath</arg>
+			<arg>$CONSOLEJAR</arg>
+			<arg>org.pdfsam.console.ConsoleClient</arg>
+			<runner interface="http://repo.roscidus.com/java/openjdk-jre" />
+		</command>
+		<implementation version="2.2.2" released="2012-11-05" stability="stable" id="sha1new=3ed303100a8d92772d8342ce2d70dee22f1c9fe5">
+			<environment name="PDFSAMJAR" insert="pdfsam-2.2.2.jar" mode="replace" />
+			<environment name="CONSOLEJAR" insert="lib/pdfsam-console-2.4.1e.jar" mode="replace" />
+			<manifest-digest sha1new="3ed303100a8d92772d8342ce2d70dee22f1c9fe5" sha256="d5d5c88283aca3ec355c835f51c309ea61eb8d8e017f974e417fd0c63327bea3" sha256new="2XK4RAUDVSR6YNK4QNPVDQYJ5JQ6XDMOAF7ZOTSBP7IMMMZHX2RQ" />
+			<archive href="http://sourceforge.net/projects/pdfsam/files/pdfsam/2.2.2/pdfsam-2.2.2-out.zip" size="15220658" type="application/zip" />
+		</implementation>
+	</group>
+	<entry-point command="run" binary-name="pdfsam">
+		<name xml:lang="en">PDF Split and Merge</name>
+	</entry-point>
+	<entry-point command="console" binary-name="pdfsam">
+		<needs-terminal />
+		<name xml:lang="en">PDF Split and Merge - Console Mode</name>
+	</entry-point>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJSl6KsAAoJEIWg8Nq0buZoAboH+gPRbiJOX80aeDsmQcKSt5iDfoPv7apjF4c42XvMEbePPImdKAEnuSHTiGkGLCMYxHBU0qFAx6Xb9so+Q/n7Gdc1KoYzkL0HEToqUc3QqunyuQ5yxyOQQSSPVm9cqEb+IGK1G6ROjktW5DdWkS0+ozRhTBSVgACzGA0/STicm7N4EOico27pqsAgj7TVDFPl615bxOdFILKND+QYJSC7jJZvzLXzZt1iaocsMG8/tzfnhVZjiFftpqV5Riyg57Bduxh8DJVyfMsYBol7r3Gw6h/Hts/UC1eiMZfeYZIaK7GBncCHCxHtNErLQ3cibQu3TUTvRk0xg7TZgJuovTC9hSM=
+
+-->

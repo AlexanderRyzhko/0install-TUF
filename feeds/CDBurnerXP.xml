@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://zero-install.sourceforge.net/2004/injector/interface http://0install.de/schema/injector/interface/interface.xsd http://0install.de/schema/desktop-integration/capabilities http://0install.de/schema/desktop-integration/capabilities/capabilities.xsd" uri="http://0install.de/feeds/CDBurnerXP.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>CDBurnerXP</name>
+	<summary xml:lang="en">Free CD burner</summary>
+	<description xml:lang="en">CDBurnerXP is a free application to burn CDs and DVDs, including Blu-Ray and HD-DVDs. It also includes the feature to burn and create ISOs, as well as a multilanguage interface. Everyone, even companies, can use it for free.</description>
+	<icon href="http://0install.de/feeds/images/CDBurnerXP.png" type="image/png" />
+	<icon href="http://0install.de/feeds/images/CDBurnerXP.ico" type="image/vnd.microsoft.icon" />
+	<group main="cdbxpp.exe">
+		<command name="cdbxpcmd" path="cdbxpcmd.exe" />
+		<group version="4.3.9.2809" released="2011-11-20" stability="stable">
+			<implementation arch="Windows-x86_64" id="sha1new=5e4b7277f325a198a3c2e48564f5f7a3f543238b">
+				<manifest-digest sha1new="5e4b7277f325a198a3c2e48564f5f7a3f543238b" sha256="0ec1f005ca5df7e1937571f127251cbd5e5b6759f9a9652f9d60cbf001a928f6" sha256new="B3A7ABOKLX36DE3VOHYSOJI4XVPFWZ2Z7GUWKL45MDF7AANJFD3A" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-x64-4.3.9.2809.zip" size="6196081" type="application/zip" />
+					<archive href="http://www.un4seen.com/stuff/bass_aac-x64.zip" size="158036" type="application/zip" />
+				</recipe>
+			</implementation>
+			<implementation arch="Windows-i486" id="sha1new=65e6173870e0a1a012e75b6b443620938b0c5f8a">
+				<manifest-digest sha1new="65e6173870e0a1a012e75b6b443620938b0c5f8a" sha256="b4be28d4760f9280d6b261f63dc2fc264323b6c71c43cbb3cea9198ee703ccf2" sha256new="WS7CRVDWB6JIBVVSMH3D3QX4EZBSHNWHDRB4XM6OVEMY5ZYDZTZA" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-4.3.9.2809.zip" size="5874882" type="application/zip" />
+					<archive href="http://us.un4seen.com/files/z/2/bass_aac24.zip" size="154386" type="application/zip" />
+				</recipe>
+			</implementation>
+		</group>
+		<group version="4.4.1.3341" released="2012-08-01" stability="stable">
+			<implementation arch="Windows-x86_64" id="sha1new=6c71314ae1173b47a819d72aa30375e7323caa6d">
+				<manifest-digest sha1new="6c71314ae1173b47a819d72aa30375e7323caa6d" sha256="888c2e30f217a916b26543174f633af0917afbc4d9f0ecaf41df7782b558bb14" sha256new="RCGC4MHSC6URNMTFIMLU6YZ26CIXV66E3HYOZL2B353YFNKYXMKA" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-x64-4.4.1.3341.zip" size="6410215" type="application/zip" />
+					<archive href="http://www.un4seen.com/stuff/bass_aac-x64.zip" size="158036" type="application/zip" />
+				</recipe>
+			</implementation>
+			<implementation arch="Windows-i486" id="sha1new=ef3a03e0886b310fe182c18159eceb21957b1ff0">
+				<manifest-digest sha1new="ef3a03e0886b310fe182c18159eceb21957b1ff0" sha256="fda68dfb78c679a3ad24a5ec9d12b54e783b6ef48e0514e1c0b322fa615ca3d8" sha256new="7WTI363YYZ42HLJEUXWJ2EVVJZ4DW3XURYCRJYOAWMRPUYK4UPMA" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-4.4.1.3341.zip" size="6086404" type="application/zip" />
+					<archive href="http://us.un4seen.com/files/z/2/bass_aac24.zip" size="154386" type="application/zip" />
+				</recipe>
+			</implementation>
+		</group>
+		<group version="4.4.2.3442" released="2012-09-22" stability="stable">
+			<implementation arch="Windows-x86_64" id="sha1new=8bcbe88d88a4b88cda6d2af72b016a38a0a5c5a5">
+				<manifest-digest sha1new="8bcbe88d88a4b88cda6d2af72b016a38a0a5c5a5" sha256="a9e3775ed2026be6c4d1ea37b64ef6314ddfd00cabe5a4f361bdb55360f761fa" sha256new="VHRXOXWSAJV6NRGR5I33MTXWGFG57UAMVPS2J43BXW2VGYHXMH5A" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-x64-4.4.2.3442.zip" size="6494229" type="application/zip" />
+					<archive href="http://www.un4seen.com/stuff/bass_aac-x64.zip" size="158036" type="application/zip" />
+				</recipe>
+			</implementation>
+			<implementation arch="Windows-i486" id="sha1new=327d295b47d956ba1c5bc8aa88eef8632078c3ba">
+				<manifest-digest sha1new="327d295b47d956ba1c5bc8aa88eef8632078c3ba" sha256="eb7079c6d5270eaae9001bf7af530e960126bc52fc1e6e61295322b5beb39f2a" sha256new="5NYHTRWVE4HKV2IADP326UYOSYASNPCS7QPG4YJJKMRLLPVTT4VA" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-4.4.2.3442.zip" size="6160788" type="application/zip" />
+					<archive href="http://us.un4seen.com/files/z/2/bass_aac24.zip" size="154386" type="application/zip" />
+				</recipe>
+			</implementation>
+		</group>
+		<group version="4.5.0.3661" released="2012-12-09" stability="stable">
+			<implementation arch="Windows-x86_64" id="sha1new=2101f5c315f7bdcf4d548ab48e33d6e043ed546a">
+				<manifest-digest sha1new="2101f5c315f7bdcf4d548ab48e33d6e043ed546a" sha256="de8bb4efd622ef83a81a91c57571201d34d237d7b3a0d3a689beff21ecefdebb" sha256new="32F3J36WELXYHKA2SHCXK4JADU2NEN6XWOQNHJUJX37SD3HP325Q" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-x64-4.5.0.3661.zip" size="5939785" type="application/zip" />
+					<archive href="http://www.un4seen.com/stuff/bass_aac-x64.zip" size="158036" type="application/zip" />
+				</recipe>
+			</implementation>
+			<implementation arch="Windows-i486" id="sha1new=c2d846fe80d3fba6a7c74150def493f772841d7c">
+				<manifest-digest sha1new="c2d846fe80d3fba6a7c74150def493f772841d7c" sha256="cc09b51c40830c34614c301ee908fef77201312e8dd545058a4fb6d184ccb8b1" sha256new="ZQE3KHCAQMGDIYKMGAPOSCH665ZACMJORXKUKBMKJ63NDBGMXCYQ" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-4.5.0.3661.zip" size="5728711" type="application/zip" />
+					<archive href="http://us.un4seen.com/files/z/2/bass_aac24.zip" size="154386" type="application/zip" />
+				</recipe>
+			</implementation>
+		</group>
+		<group version="4.5.0.3685" released="2012-12-16" stability="stable">
+			<implementation arch="Windows-x86_64" id="sha1new=dfb621896c2ca54399eb91db92a51db84a5b8f2e">
+				<manifest-digest sha1new="dfb621896c2ca54399eb91db92a51db84a5b8f2e" sha256="a5c864625c912f7d9216ad344398f8ba5a319e63eeb0c1e592554d8ede153230" sha256new="UXEGIYS4SEXX3EQWVU2EHGHYXJNDDHTD52YMDZMSKVGY5XQVGIYA" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-x64-4.5.0.3685.zip" size="5940756" type="application/zip" />
+					<archive href="http://www.un4seen.com/stuff/bass_aac-x64.zip" size="158036" type="application/zip" />
+				</recipe>
+			</implementation>
+			<implementation arch="Windows-i486" id="sha1new=41c681ccb566c32f2b66c8a7a12b27b4cde19e2a">
+				<manifest-digest sha1new="41c681ccb566c32f2b66c8a7a12b27b4cde19e2a" sha256="12946e97982993773e32876ec3eedc97b07b9bbb7ddc18a34110489e409d6db6" sha256new="CKKG5F4YFGJXOPRSQ5XMH3W4S6YHXG53PXOBRI2BCBEJ4QE5NW3A" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-4.5.0.3685.zip" size="5729023" type="application/zip" />
+					<archive href="http://us.un4seen.com/files/z/2/bass_aac24.zip" size="154386" type="application/zip" />
+				</recipe>
+			</implementation>
+		</group>
+		<group version="4.5.0.3717" released="2012-12-28" stability="stable">
+			<implementation arch="Windows-x86_64" id="sha1new=98f8b9fb430e9daf31bd6f2916d02234f444b03b">
+				<manifest-digest sha1new="98f8b9fb430e9daf31bd6f2916d02234f444b03b" sha256="239ded66d9ed747936273ed15ef0a36be8237a9e6aa996b5963e34e824c448a1" sha256new="EOO62ZWZ5V2HSNRHH3IV54FDNPUCG6U6NKUZNNMWHY2OQJGEJCQQ" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-x64-4.5.0.3717.zip" size="5941179" type="application/zip" />
+					<archive href="http://www.un4seen.com/stuff/bass_aac-x64.zip" size="158036" type="application/zip" />
+				</recipe>
+			</implementation>
+			<implementation arch="Windows-i486" id="sha1new=229df1e0548013b56fd94e16f92cc9e71d8fc471">
+				<manifest-digest sha1new="229df1e0548013b56fd94e16f92cc9e71d8fc471" sha256="0473334dd635d28ccbf6113cc287a00e750a00306944525c098b569b525f133c" sha256new="ARZTGTOWGXJIZS7WCE6MFB5ABZ2QUABQNFCFEXAJRNLJWUS7CM6A" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-4.5.0.3717.zip" size="5729783" type="application/zip" />
+					<archive href="http://us.un4seen.com/files/z/2/bass_aac24.zip" size="154386" type="application/zip" />
+				</recipe>
+			</implementation>
+		</group>
+		<group version="4.5.1.3868" released="2013-02-23" stability="stable">
+			<implementation arch="Windows-x86_64" id="sha1new=9d6d4f83fd3dc418e56b264f6272fdf323ee4111">
+				<manifest-digest sha1new="9d6d4f83fd3dc418e56b264f6272fdf323ee4111" sha256="78768fcdc5c2cb542cf008067bffed2e037b264f129cbdf775631381b38a00da" sha256new="PB3I7TOFYLFVILHQBADHX77NFYBXWJSPCKOL353VMMJYDM4KADNA" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-x64-4.5.1.3868.zip" size="5985877" type="application/zip" />
+					<archive href="http://www.un4seen.com/stuff/bass_aac-x64.zip" size="158036" type="application/zip" />
+				</recipe>
+			</implementation>
+			<implementation arch="Windows-i486" id="sha1new=fa6b3fcf0f0e20168f653d9b32a1d8c7016fe46c">
+				<manifest-digest sha1new="fa6b3fcf0f0e20168f653d9b32a1d8c7016fe46c" sha256="5c729922db0b859a7178f46a6d978640c8ca1b692ebc163b144ac6f22fbfd916" sha256new="LRZJSIW3BOCZU4LY6RVG3F4GIDEMUG3JF26BMOYUJLDPEL573ELA" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-4.5.1.3868.zip" size="5817487" type="application/zip" />
+					<archive href="http://us.un4seen.com/files/z/2/bass_aac24.zip" size="154386" type="application/zip" />
+				</recipe>
+			</implementation>
+		</group>
+		<group version="4.5.1.4003" released="2013-04-23" stability="stable">
+			<implementation arch="Windows-x86_64" id="sha1new=6719217339995403fc6c84e8d2841a187fc0565c">
+				<manifest-digest sha1new="6719217339995403fc6c84e8d2841a187fc0565c" sha256="af1b52889313c854f971cd44543c6e73eefe2b6af618627a667f91b93826ab3a" sha256new="V4NVFCETCPEFJ6LRZVCFIPDOOPXP4K3K6YMGE6TGP6I3SOBGVM5A" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-x64-4.5.1.4003.zip" size="5989866" type="application/zip" />
+					<archive href="http://www.un4seen.com/stuff/bass_aac-x64.zip" size="158036" type="application/zip" />
+				</recipe>
+			</implementation>
+			<implementation arch="Windows-i486" id="sha1new=8bc196bb48c911a03c5dcd85e35a32674a97f37a">
+				<manifest-digest sha1new="8bc196bb48c911a03c5dcd85e35a32674a97f37a" sha256="5018a80526ed2b0cd17da9ce644d67cae91a461b185b9330905079d148cd1e73" sha256new="KAMKQBJG5UVQZUL5VHHGITLHZLURURQ3DBNZGMEQKB45CSGNDZZQ" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-4.5.1.4003.zip" size="5821334" type="application/zip" />
+					<archive href="http://us.un4seen.com/files/z/2/bass_aac24.zip" size="154386" type="application/zip" />
+				</recipe>
+			</implementation>
+		</group>
+		<group version="4.5.2.4214" released="2013-07-14" stability="stable">
+			<implementation arch="Windows-x86_64" id="sha1new=979c22f5b7af42b46630672a7ce4905d99f10ab4">
+				<manifest-digest sha1new="979c22f5b7af42b46630672a7ce4905d99f10ab4" sha256="e012c7f520c274ff2d467510bae55b4e6f218f498c87a7e252d9f065be2bfe3e" sha256new="4AJMP5JAYJ2P6LKGOUILVZK3JZXSDD2JRSD2PYSS3HYGLPRL7Y7A" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-x64-4.5.2.4214.zip" size="6015203" type="application/zip" />
+					<archive href="http://www.un4seen.com/stuff/bass_aac-x64.zip" size="158036" type="application/zip" />
+				</recipe>
+			</implementation>
+			<implementation arch="Windows-i486" id="sha1new=6f4c208442b241d7e58e6bb1bb894032bc94c9f4">
+				<manifest-digest sha1new="6f4c208442b241d7e58e6bb1bb894032bc94c9f4" sha256="a7172a4dce3112fee25697090cc342b6bd638ca4a696b41bc406312f8e761e42" sha256new="U4LSUTOOGEJP5YSWS4EQZQ2CW26WHDFEU2LLIG6EAYYS7DTWDZBA" />
+				<recipe>
+					<archive href="http://download.cdburnerxp.se/portable/CDBurnerXP-4.5.2.4214.zip" size="5724414" type="application/zip" />
+					<archive href="http://us.un4seen.com/files/z/2/bass_aac24.zip" size="154386" type="application/zip" />
+				</recipe>
+			</implementation>
+		</group>
+	</group>
+	<capabilities arch="Windows-*" xmlns="http://0install.de/schema/desktop-integration/capabilities">
+		<registration id="CDBurnerXP" capability-reg-path="Software\Canneverbe Limited\CDBurnerXP\Capabilities" />
+		<file-type id="CDBurnerXPOpen">
+			<description xml:lang="en">CDBurnerXP Data Compilation</description>
+			<icon href="http://0install.de/feeds/images/CDBurnerXP_data.ico" type="image/vnd.microsoft.icon" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" />
+			<verb name="open" args="/od &quot;%1&quot;" />
+			<extension value=".dxp" />
+		</file-type>
+		<file-type id="CDBurnerXPAudio">
+			<description xml:lang="en">CDBurnerXP Audio Compilation</description>
+			<icon href="http://0install.de/feeds/images/CDBurnerXP_audio.ico" type="image/vnd.microsoft.icon" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" />
+			<verb name="open" args="/oa &quot;%1&quot;" />
+			<extension value=".axp" />
+		</file-type>
+		<file-type id="CDBurnerXPOpenIso">
+			<description xml:lang="en">ISO Image</description>
+			<icon href="http://0install.de/feeds/images/CDBurnerXP_iso.ico" type="image/vnd.microsoft.icon" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" />
+			<verb name="open" args="/oi &quot;%1&quot;" />
+			<extension value=".iso" />
+		</file-type>
+		<auto-play id="CDBurnerXP" provider="CDBurnerXP" prog-id="CDBurnerXPOpen">
+			<description xml:lang="en">Burn a disc</description>
+			<verb name="open" args="/od &quot;%1&quot;" />
+			<event name="HandleBluRayBurningOnArrival" />
+			<event name="HandleCDBurningOnArrival" />
+			<event name="HandleDVDBurningOnArrival" />
+			<event name="HandleHDDVDBurningOnArrival" />
+		</auto-play>
+	</capabilities>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJR/pQLAAoJEIWg8Nq0buZoRJsH+gNTOkYYSJpww40qj/C4kHLEWwX6fUKgsqS9JISdwgtHVHuOS7FKLNLIeot+yGI9XwxwZ6uWAlLly5CroXrB4zZaexOReEfP+H+yUUnacbRWYyQ2X+XZryGUlMslATxEPrlLxUuqoXnkF5vUpAFf1FcBAGPQFkMsFXUrht0FDWzHhP86gLOxnFnXHGhVEpTtIbCZaVYLITHTCXhpGrQriT0+KwMsNtiQrWadszJdOUi+gp/e6EuzOrv7+7FwGEUcZfRUw7NXQtKFgA6ihul8bpyeMD1FqS5ZAtLzGricJK5GVcZO6JlIemV2mw1F8YqSHsae2ymHeoaT2lGw275Or14=
+
+-->

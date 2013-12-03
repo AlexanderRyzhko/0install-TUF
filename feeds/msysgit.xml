@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://0install.de/feeds/msysgit.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>msysgit</name>
+	<summary xml:lang="en">decentralized version control system</summary>
+	<summary xml:lang="de">dezentrales Versionsverwaltungssystem</summary>
+	<description xml:lang="en">Git is a powerful version control system aiming to be the fastest decentralized source code management tool on this planet.</description>
+	<description xml:lang="de">Git ist ein mächtiges Versionsverwaltungssystem mit dem Ziel das schnellste denzentrale Quellcodeverwaltungstool auf diesem Planeten zu sein.</description>
+	<homepage>http://msysgit.github.com/</homepage>
+	<icon href="http://code.google.com/p/msysgit/logo" type="image/png" />
+	<category>Development</category>
+	<needs-terminal />
+	<feed-for interface="http://repo.roscidus.com/git/core" />
+	<group arch="Windows-*" license="GPL v2 (GNU General Public License)">
+		<command name="run" path="cmd/git.cmd" />
+		<command name="gitk" path="cmd/gitk.cmd" />
+		<implementation version="1.7.11" released="2012-06-20" stability="stable" id="sha1new=dd735fefee7e61c7acb83f7c9261bffcfec519b3">
+			<manifest-digest sha1new="dd735fefee7e61c7acb83f7c9261bffcfec519b3" sha256="c96a8e74ad806b3439bd8dffd099bfc6938bcdd35acc9c843ae9e60c030c239f" sha256new="ZFVI45FNQBVTION5RX75BGN7Y2JYXTOTLLGJZBB25HTAYAYMEOPQ" />
+			<archive href="http://0install.de/files/hosted/msysgit-1.7.11.tar.lzma" type="application/x-lzma-compressed-tar" size="16568321" extract="msysgit-1.7.11" />
+		</implementation>
+	</group>
+	<entry-point command="run" binary-name="git" />
+	<entry-point command="gitk" binary-name="gitk" />
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJQEDbQAAoJEIWg8Nq0buZo/4kIALTO4Q7VC8tpt7wRgvmd2U6/HGZ/mkHSjW1XkpuPDHfRNA3snXG8bHlUOh+cdKKOHyT1wiZ5J6qTK0RYToNJqVJo2oMPXNrhUQ7R5svR+Ts1kPqP4mXjlZ6p3ULFp/rAryV7RFw1Fl2lx6ULn2PB0BwmM1fQELfF3JycEnNw3zJt15T65qdCRllJJDZL9GPW+2KWDFKbEC1QAPA1h7WnzHfXI3gLiCxAhBd7gB49oYZzyvp9U8cKZZQj6t6Dir29GdLPkKvUZ8IZeoSo5vQSehZSo6ea23ptEHsv0eQdOy+hkqtVgYz5hagnyqzBJXHaBb1a77PRFGcvYWaOp2I3HoE=
+
+-->

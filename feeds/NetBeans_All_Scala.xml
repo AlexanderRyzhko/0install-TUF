@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://zero-install.sourceforge.net/2004/injector/interface http://0install.de/schema/injector/interface/interface.xsd http://0install.de/schema/desktop-integration/capabilities http://0install.de/schema/desktop-integration/capabilities/capabilities.xsd" uri="http://0install.de/feeds/NetBeans_All_Scala.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>NetBeans All with Scala</name>
+	<summary xml:lang="en">A multi-language software development environment</summary>
+	<summary xml:lang="de">Eine multi-Sprachen Softwareentwicklungsumgebung</summary>
+	<description xml:lang="en">NetBeans is a multi-language integrated development environment.</description>
+	<description xml:lang="de">NetBeans ist eine multi-Sprachen integrierte Entwicklungsumgebung (IDE).</description>
+	<homepage>http://www.netbeans.org/</homepage>
+	<icon href="http://0install.de/feeds/images/NetBeans.png" type="image/png" />
+	<icon href="http://0install.de/feeds/images/NetBeans.ico" type="image/vnd.microsoft.icon" />
+	<category>Development</category>
+	<implementation version="1" stability="stable" id="empty">
+		<requires interface="http://0install.de/feeds/Scala.xml">
+			<environment name="SCALA_HOME" insert="." mode="replace" />
+		</requires>
+		<command name="run">
+			<runner interface="http://0install.de/feeds/NetBeans_All.xml" />
+		</command>
+		<manifest-digest sha1new="da39a3ee5e6b4b0d3255bfef95601890afd80709" sha256="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" sha256new="4OYMIQUY7QOBJGX36TEJS35ZEQT24QPEMSNZGTFESWMRW6CSXBKQ" />
+		<recipe />
+	</implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJREWPMAAoJEIWg8Nq0buZocOgH/Azi4vTuAzI8eMu2p9FJqAROSqULZTrb/IEGHHfVdywlN6yIRhnEIW+Kx/kheqXPONSVNLizfxkovniF8/x/Yt0W3t/cDOmywOonhPLgm5XnNqEWtd+LMVcWDJ7mR0BRJiR9BZ2KMZ6L4dPsF0Ca+Yc6E42MohRyUQlBJeYznWCcbyigm1S9+1/aaEX8j6uECAup/nzjxDM9RM7wVSKH3lXeGGRLYfuDRb/1sUgcLZdPZXcCSkfX6Nupg8i0PYl/5YPwjn57UdQnkWXYa0rXA5UAABbTMpAEXdUQrBVKPEQkAF3Xe1f7MbyLr2XerXXyitWEixUzQpmsygXIjd2hcik=
+
+-->

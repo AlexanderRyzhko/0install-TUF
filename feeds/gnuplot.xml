@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://0install.de/feeds/gnuplot.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>gnuplot</name>
+	<summary xml:lang="en">famous scientific plotting package</summary>
+	<summary xml:lang="de">berühmtes wissenschaftliches Plotting-Paket</summary>
+	<description xml:lang="en">Gnuplot is a portable command-line driven graphing utility.</description>
+	<description xml:lang="de">Gnuplot ist ein portierbares Befehlszeilen-getriebes Graph-Tool.</description>
+	<homepage>http://gnuplot.sourceforge.net/</homepage>
+	<icon href="http://0install.de/feeds/images/gnuplot.png" type="image/png" />
+	<icon href="http://0install.de/feeds/images/gnuplot.ico" type="image/vnd.microsoft.icon" />
+	<category>Graphics</category>
+	<category>Utility</category>
+	<group license="GPL v2 (GNU General Public License)">
+		<command name="run" path="bin/wgnuplot.exe" />
+		<command name="cli" path="bin/gnuplot.exe" />
+		<group version="4.6.0" released="2012-03-12" stability="stable">
+			<implementation arch="Windows-*" id="sha1new=f9d7518a15456df012b967e00d21c458ca31151b">
+				<manifest-digest sha1new="f9d7518a15456df012b967e00d21c458ca31151b" sha256="deca15cf952f9e42b589df5e15f7d2dbb0cf1c8aa190400d5de2fc7e28a4c35b" sha256new="33FBLT4VF6PEFNMJ35PBL56S3OYM6HEKUGIEADK54L6H4KFEYNNQ" />
+				<archive href="http://downloads.sourceforge.net/gnuplot/gp460win32.zip" type="application/zip" size="12580915" extract="gnuplot" />
+			</implementation>
+		</group>
+	</group>
+	<package-implementation arch="Linux-*" main="/usr/bin/gnuplot" package="gnuplot" distributions="Debian Gentoo Ports RPM Slack" />
+	<entry-point command="run" binary-name="wgnuplot">
+		<name xml:lang="en">Gnuplot graphical interface</name>
+		<name xml:lang="de">Gnuplot grafische Oberfläche</name>
+	</entry-point>
+	<entry-point command="cli" binary-name="gnuplot">
+		<needs-terminal />
+		<name xml:lang="en">Gnuplot command-line interface</name>
+		<name xml:lang="de">Gnuplot Befehlszeilenoberfläche</name>
+	</entry-point>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJQ3e2/AAoJEIWg8Nq0buZooxYH/ipXRfGsQKPn9Sg8TFucKANtL9M9/zamLHAXaEptnmlK8lI0dALshwf6ef2dKNnnCJ09aZDX/OSHqMW+FVYU2sqwTvxG4sIN+7AtE/+ei8xI9B8eAybEFDb7U2/RHrRji8rYBtvPhg1H4SmyxPugdcd1ByS1/BdczkUyoUc84li7HObvJa/263GsmIZx84RPw7O3rTpOwCieusiivVIyR9aYYrEZ0xHCK7Le/maTP2CSXxLH97Oa/lO4maBGCcRn8W+mjY0LIp27wsILqNvCwwBLpLV9OjOl+lPdF7gUd7jx68C4Q4JNgO2gaFrShqT8xuN1h42gpZVrm/7n6wqftSA=
+
+-->

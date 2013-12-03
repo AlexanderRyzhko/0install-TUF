@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://zero-install.sourceforge.net/2004/injector/interface http://0install.de/schema/injector/interface/interface.xsd http://0install.de/schema/desktop-integration/capabilities http://0install.de/schema/desktop-integration/capabilities/capabilities.xsd" uri="http://0install.de/feeds/jar-launcher.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>JAR Launcher</name>
+	<summary xml:lang="en">launcher that starts the main class while preserving the CLASSPATH</summary>
+	<description xml:lang="en">A launcher that starts the main class specified in a JAR while preserving the CLASSPATH.
+Workaround for java -classpath ... -jar ... which does not work.</description>
+	<homepage>http://bitbucket.org/nanobyte/jar-launcher</homepage>
+	<implementation version="1.0-pre" stability="stable" id="1.0-SNAPSHOT">
+		<requires interface="http://repo.roscidus.com/java/openjdk-jre" version="1.3.." />
+		<command name="run">
+			<environment name="CLASSPATH" insert="jar-launcher-1.0-SNAPSHOT.jar" />
+			<runner interface="http://repo.roscidus.com/java/openjdk-jre">
+				<arg>net.zeroinstall.jar.launcher.JarLauncher</arg>
+			</runner>
+		</command>
+		<manifest-digest sha1new="4b94b2fc50623cdcd2f93b5a46a22f7bcb4c15e7" sha256="9e88f9637b9e443ab09a2b6139ee847ee39082a67980983890c4d085cc24bbda" sha256new="T2EPSY33TZCDVME2FNQTT3UEP3RZBAVGPGAJQOEQYTIILTBEXPNA" />
+		<file href="http://0install.de/files/hosted/jar-launcher-1.0-SNAPSHOT.jar" size="3140" dest="jar-launcher-1.0-SNAPSHOT.jar" />
+	</implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJRoJHHAAoJEIWg8Nq0buZouqwH/2NWoyPPhdkiSBW79UODZvkij+sCVeuU4xCmw4lA9Hb9fAA7RTVYF06YFdJSyZPJjNMmqMKVTpHP5z5+uljDrRDKZbpziHcm0p/rafQ/Zlpae2pF9E9LTu/DMv3UekDhfCOPJ0ogYlN+Mg+L1OksEI5atixULCj1mQRsWP7F0PzTN5tnYo0HXM9nn9CD9c9JSmch90Fa/TjlcBRq5JsYMkz5oXFiYcZ1kGbQ6qAlvYRx3SZW74BXvtgDCVLunzWTTkIypp9EqObeEHSGRdtYDbftpKj/TA7woxhKkm1wYdVsW+Dg/jIIxan+i9uX91Mwj8Z8LF8kmtdcEXN69XTE/mg=
+
+-->

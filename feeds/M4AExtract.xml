@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://zero-install.sourceforge.net/2004/injector/interface http://0install.de/schema/injector/interface/interface.xsd http://0install.de/schema/desktop-integration/capabilities http://0install.de/schema/desktop-integration/capabilities/capabilities.xsd" uri="http://0install.de/feeds/M4AExtract.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>M4AExtract</name>
+	<summary xml:lang="en">small tool that extracts M4As from MP4s</summary>
+	<summary xml:lang="de">kleines Tool, dass M4As aus MP4s extrahiert</summary>
+	<description xml:lang="en">A small tool that extracts M4A audio tracks from MP4 videos.</description>
+	<description xml:lang="de">Ein kleines Tool, dass M4A Tonspuren aus MP4 Videos extrahiert.</description>
+	<category>Audio</category>
+	<group license="MIT/X Consortium License">
+		<requires interface="http://0install.de/feeds/MP4Box.xml">
+			<executable-in-path name="MP4Box" />
+		</requires>
+		<command name="run" path="M4AExtract.exe">
+			<runner interface="http://0install.de/feeds/cli/cli.xml" />
+		</command>
+		<group version="0.1.2" stability="stable">
+			<implementation id="sha1new=7400ed5660af4d4ce6e629a2b5297440c31d92ad">
+				<manifest-digest sha1new="7400ed5660af4d4ce6e629a2b5297440c31d92ad" sha256="78fae2879f4766f13bd6a518dcd8aeda6c5c7dff28d490dae8488679982e943c" sha256new="PD5OFB47I5TPCO6WUUMNZWFO3JWFY7P7FDKJBWXIJCDHTGBOSQ6A" />
+				<archive href="http://0install.de/files/hosted/m4aextract-0.1.2-bin.tar.bz2" type="application/x-bzip-compressed-tar" size="4467" />
+			</implementation>
+			<implementation arch="*-src" id="sha1new=a03ce616634b6d11f2817dcaac54776d961fd9fb">
+				<manifest-digest sha1new="a03ce616634b6d11f2817dcaac54776d961fd9fb" sha256="c1e9d17eb69e973512ae48555832b3ba525f75e087b400d2ff5dcb740a1c301f" sha256new="YHU5C7VWT2LTKEVOJBKVQMVTXJJF65PAQ62ABUX7LXFXICQ4GAPQ" />
+				<archive href="http://0install.de/files/hosted/m4aextract-0.1.2-src.tar.bz2" type="application/x-bzip-compressed-tar" size="6409" />
+			</implementation>
+		</group>
+	</group>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJREWPMAAoJEIWg8Nq0buZo0YsH/1CERWhlOF4yp5CPgf2MjSy0z4fiuhsZfM18ubtTJlh++FJ3MSF/kFftnqT4Z1eeHIhjUTE7TEWH5xTH9xLHu33XR37BxRIqw6bhvYPUT6A9uMAHG8ImT2PUH/1pUzK68Vz1uaopCYTrraNQq6/e/JjFU3gKiMk8cqgD745zgzdS7+mSRU4CRQV3EW5nvm9n7tC/XhhDhOiq2txY4R/Pj7o+50gWUuKv4JVw/RChm/lC8cfS/UAKzhbV6HAmzObMDiTT7s21y6v647zotXlCfEAQpENwzAjVTBnj3JYIJBbdOYnmM/bHfMPlThX1/IpoX1Uip23K2Pb7mct2pG8ycm8=
+
+-->

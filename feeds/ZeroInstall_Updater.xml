@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://zero-install.sourceforge.net/2004/injector/interface http://0install.de/schema/injector/interface/interface.xsd http://0install.de/schema/desktop-integration/capabilities http://0install.de/schema/desktop-integration/capabilities/capabilities.xsd" uri="http://0install.de/feeds/ZeroInstall_Updater.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>Zero Install Updater</name>
+	<summary xml:lang="en">installs Zero Install updates</summary>
+	<summary xml:lang="de">installiert Zero Install updates</summary>
+	<description xml:lang="en">Used as a runner to install Zero Install for Windows updates.</description>
+	<description xml:lang="de">Als Runner verwendet um Zero Install for Windows Updates zu installieren.</description>
+	<homepage>http://0install.de/</homepage>
+	<group arch="Windows-*" license="LGPL v3 (GNU Lesser General Public License)" main="0update-win.exe">
+		<implementation version="1.2.8" released="2013-09-07" stability="stable" id="sha1new=eec643c2f9a0d43e54e2530be94028bb4f13ebbf">
+			<manifest-digest sha1new="eec643c2f9a0d43e54e2530be94028bb4f13ebbf" sha256="a08a7d1065507cf7e10bb291f18dcb0b7d1643da51414c1ec9dd922cad1d16aa" sha256new="UCFH2EDFKB6PPYILWKI7DDOLBN6RMQ62KFAUYHWJ3WJCZLI5C2VA" />
+			<archive href="http://0install.de/files/zero-install-updater-1.2.8.tar.bz2" size="527812" type="application/x-bzip-compressed-tar" />
+		</implementation>
+		<implementation version="1.2.9" released="2013-11-30" stability="stable" id="sha1new=60f4be87c168cffd7b9b1ddefc0285584bc1cbef">
+			<manifest-digest sha1new="60f4be87c168cffd7b9b1ddefc0285584bc1cbef" sha256="7a155012721eca7a86f73e79e51470cb2cb3610ec1b24e84b178fe372e34eb3c" sha256new="PIKVAETSD3FHVBXXHZ46KFDQZMWLGYIOYGZE5BFRPD7DOLRU5M6A" />
+			<archive href="http://0install.de/files/zero-install-updater-1.2.9.tar.bz2" size="533640" type="application/x-bzip-compressed-tar" />
+		</implementation>
+	</group>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJSmiPlAAoJEIWg8Nq0buZo2YQH/3mZ/AxkSYz5UGl4X9B4Ky4Gb949Tma7hMY/k8NlAMtTAUXle2jOHqtRnNAdqvH8F+cRq8tZv5ly5rxU3kGzlcc8gvN0Z4ZOYnFgBjeNQRKmcqWbVahXJYLrjp8tooNbbMWz9GyufP9txYmoLDswhu54II2po0DIKt1uYyDI1zisWjP0Em0ohTIJVUN4JBwD/gv2Qd++TbHmNrOGdn4EbCCDosuDUuCk0YudBd+gPcCk3fPA20hfIGFJjjX9w43pcjuHd0EjeXoDkBaCP9OM5PzOHSC2j6Si8Mw7cNXAWwYUEvLsahSuAbVNzS0TnFUhd4lFu/vsPaub6sFe05cZBOI=
+
+-->

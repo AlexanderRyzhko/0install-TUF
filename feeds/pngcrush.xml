@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://0install.de/feeds/pngcrush.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>pngcrush</name>
+	<summary xml:lang="en">optimizer for PNG files</summary>
+	<description xml:lang="en">Pngcrush is an optimizer for PNG (Portable Network Graphics) files.</description>
+	<homepage>http://pmt.sourceforge.net/pngcrush/</homepage>
+	<category>Utility</category>
+	<needs-terminal />
+	<group>
+		<group version="1.7.15" released="2011-04-28" stability="stable">
+			<implementation arch="Windows-*" main="pngcrush.exe" id="sha1new=598c4c54179ed09f111ac3984e4055995c793366">
+				<manifest-digest sha1new="598c4c54179ed09f111ac3984e4055995c793366" sha256="a9b3315ed057bcb4870ed5b8ce8474cdd512eec1fc2b8cf40796c924f5c400c2" sha256new="VGZTCXWQK66LJBYO2W4M5BDUZXKRF3WB7QVYZ5AHS3ESJ5OEADBA" />
+				<archive href="http://downloads.sourceforge.net/pmt/pngcrush-1.7.15-win32.zip" type="application/zip" size="217406" />
+			</implementation>
+		</group>
+	</group>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJQ3e3dAAoJEIWg8Nq0buZoyAoH/RZDnbmjqB2Fyw6lMvWUekO0sj3aH8x08XiYMh0Q3DIhl9N5M8OBzn4FVT6bW6L12hH73XB7+6r4IJVowvlVoU54XzmAYpFA7hcBbyl4TG+3zyswWvgzrXWcUDXzvxebEriz+PHFtxIzmi/T3k/bKbnI7emhkF89/I771LJxLknb8AjCS/jiIWQaol5NgqEgRYBhIqhHSmM6JDv3SAJbz2LdsgdcrwGTC+43LhN4scYSZKltfskL1rIP4FA5K1VGEjZkOtZM8xjmZuUbCdqWS0omtbUNo3Mtqt6nBux1TlNfsbTD+ztuQFMw26h4GwMEwepaYBWNU1jKcnSG7IvxF9o=
+
+-->

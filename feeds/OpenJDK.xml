@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://zero-install.sourceforge.net/2004/injector/interface http://0install.de/schema/injector/interface/interface.xsd http://0install.de/schema/desktop-integration/capabilities http://0install.de/schema/desktop-integration/capabilities/capabilities.xsd" uri="http://0install.de/feeds/OpenJDK.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<website>https://github.com/alexkasko/openjdk-unofficial-builds</website>
+	<name>OpenJDK</name>
+	<summary xml:lang="en">unofficial OpenJDK build</summary>
+	<feed-for interface="http://repo.roscidus.com/java/openjdk-jdk" />
+	<group license="GPL with linking exception">
+		<command name="run" path="bin/java.exe" />
+		<command name="javaw" path="bin/javaw.exe" />
+		<command name="javac" path="bin/javac.exe" />
+		<implementation arch="Windows-x86_64" version="7.0.6" released="2012-12-11" stability="testing" id="sha1new=80d3ab114fd0ce22ff47837d83a26d080aa73761">
+			<manifest-digest sha1new="80d3ab114fd0ce22ff47837d83a26d080aa73761" sha256="943463195bd5eeb6bffde41877358624d5412a753053ae0c768a3f5c840181c5" sha256new="SQ2GGGK32XXLNP754QMHONMGETKUCKTVGBJ24DDWRI7VZBABQHCQ" />
+			<archive href="https://github.com/downloads/alexkasko/openjdk-unofficial-builds/openjdk-1.7.0-u6-unofficial-b24-windows-amd64-image.zip" type="application/zip" size="78356952" extract="openjdk-1.7.0-u6-unofficial-b24-windows-amd64-image" />
+		</implementation>
+		<implementation arch="Windows-i586" version="7.0.6" released="2012-12-11" stability="testing" id="sha1new=cbd846c9b20af5b93c47b4773f02f29a5460e282">
+			<manifest-digest sha1new="cbd846c9b20af5b93c47b4773f02f29a5460e282" sha256="13fe0fee50de31c43119c47abc3c9eaf533e45ddc3ac4ffbbc761b1fbd3c663e" sha256new="CP7A73SQ3YY4IMIZYR5LYPE6V5JT4RO5YOWE7654OYNR7PJ4MY7A" />
+			<archive href="https://github.com/downloads/alexkasko/openjdk-unofficial-builds/openjdk-1.7.0-u6-unofficial-b24-windows-i586-image.zip" type="application/zip" size="84544773" extract="openjdk-1.7.0-u6-unofficial-b24-windows-i586-image" />
+		</implementation>
+	</group>
+	<entry-point command="run" binary-name="java">
+		<needs-terminal />
+		<name xml:lang="en">Java command-line runner</name>
+	</entry-point>
+	<entry-point command="javaw" binary-name="javaw">
+		<name xml:lang="en">Java GUI runner</name>
+	</entry-point>
+	<entry-point command="javac" binary-name="javac">
+		<name xml:lang="en">Java Compiler</name>
+	</entry-point>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJRKg3nAAoJEIWg8Nq0buZorAEIAJRoBLldsMxj90c6rkqUTVoYArG8RGXTYtpkaUOPd+MX/0TvHmhzEV4df5WDsw7R+cBvfhqXWiR0GiiE8gdoMMb3NosgvnMYzKeOCLnVUnPkYMDI3e9lY6C+CJ/PVOCvoJiHNcvCQzYHp+KmQT6cVMpi1jKFbfHUzVoRExt9NvAFjyfRZ8aHrBXNarbxD6sc5zwZAekHioLrDtyZWtxeQGbvTkIJkpctUolKLdzqGTAfZuO96PIY1/lJZypcCCClZr7EOHH+h51rj3pu0BuG+o+5v83bcflCAIUNhh9k8Ye0e6fRiEBJRMRognkCGQa9ASJg7+0v19Mp1eKjcS8oIHE=
+
+-->

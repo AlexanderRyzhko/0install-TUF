@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://zero-install.sourceforge.net/2004/injector/interface http://0install.de/schema/injector/interface/interface.xsd http://0install.de/schema/desktop-integration/capabilities http://0install.de/schema/desktop-integration/capabilities/capabilities.xsd" uri="http://0install.de/feeds/DVDStyler.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>DVDStyler</name>
+	<summary xml:lang="en">cross-platform free DVD authoring application</summary>
+	<description xml:lang="en">DVDStyler is a cross-platform free DVD authoring application for the creation of professional-looking DVDs. It allows not only burning of video files on DVD that can be played practically on any standalone DVD player, but also creation of individually designed DVD menus.</description>
+	<homepage>http://www.dvdstyler.org/</homepage>
+	<icon href="http://0install.de/feeds/images/DVDStyler.png" type="image/png" />
+	<icon href="http://0install.de/feeds/images/DVDStyler.ico" type="image/vnd.microsoft.icon" />
+	<category>AudioVideo</category>
+	<group license="GPL v2 (GNU General Public License)">
+		<group arch="Windows-*" main="bin/DVDStyler.exe">
+			<implementation version="2.4.2" stability="stable" id="sha1new=1798b3854b3a2574d29dd9918ca87071d72c4b06">
+				<manifest-digest sha1new="1798b3854b3a2574d29dd9918ca87071d72c4b06" sha256="fc1821a4797d9eaa2f7f7e524551fa48a6f2d5b1b77cd56b773accc6732df81d" sha256new="7QMCDJDZPWPKUL37PZJEKUP2JCTPFVNRW56NK23XHLGMM4ZN7AOQ" />
+				<archive href="http://0install.de/files/hosted/DVDStyler-2.4.2-win32.zip" type="application/zip" size="34430108" />
+			</implementation>
+		</group>
+	</group>
+	<capabilities arch="Windows-*" xmlns="http://0install.de/schema/desktop-integration/capabilities">
+		<file-type id="DVDStyler.Project">
+			<description xml:lang="en">DVDStyler Project</description>
+			<verb name="open" args="&quot;%1&quot;" />
+			<extension value=".dvds" />
+		</file-type>
+		<file-type id="DVDStyler.Template">
+			<description xml:lang="en">DVDStyler Template</description>
+			<verb name="open" args="&quot;%1&quot;" />
+			<extension value=".dvdt" />
+		</file-type>
+	</capabilities>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJRRFc9AAoJEIWg8Nq0buZocWAH/3hfsrk7BQei6tbOXWYKga+GWvQUlQu1ypx+fiKcTdoKKcF9BCrcc7q2LEIB0Lk8OKdI1QGk68JJN7zcVkN9loJlSV1T5FMext9Op2dR0kW3q4YEn6uYI4Z0r4h3SkooSvLJCuhviC29aSYwlC1JXQwSQ0jZXveAOrQv+PGA8zfmbOAZEudIh0F47FybOXF3g3O3WhWyUTNjaWlTaRNgVHAaWPK+0fW3PuH2gV0Z2ynrhoFCIPbv0ucFqs4YIeVDNjIsA5EH07EuftmjaOll5l1MO15rYmnvIcb3Iw3DDaaBT6Oh12y8c3XYzs99waUqNw9AtWmrOgctJ0E5lhJ6HRg=
+
+-->

@@ -292,7 +292,7 @@ We are not too concerned about this, as current there are roughly 80 odd applica
 SECURITY OF 0install + TUF 
 --------------------------
 
-Since the download is going through TUF, we can safely assure that 0install applications are protected against attacks like arbitrary package attacks, key compromise and replay & freeze attacks. 
+Since the download is going through TUF, we can safely assume that 0install applications are protected against attacks like arbitrary package attacks, key compromise and replay & freeze attacks. 
 
 With the architecture of 0install being completely distributed in nature. Only the XML retrieval is through TUF and not the retrieval of the packages. Although there is no metadata configured for the packages the download still goes through TUF. We were not able to generate TUF metadata for the packages as well because of the distributed architecture of 0install. Even if we have not generate the metadata for the packages its still safe as the download goes through TUF and the targets file has the link of where the packages are hosted. 
 

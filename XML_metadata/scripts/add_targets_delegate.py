@@ -2,13 +2,16 @@
 Script to add the target paths
 Add the targets to unclaimed
 '''
-
+#from datetime import *
 from tuf.libtuf import *
 import distutils.core
 
 # copy subdirectory example
 fromDirectory = "/var/www/metadata.staged"
 toDirectory = "/var/www/metadata"
+tagetsDirectory = "/var/www/tagets"
+futureTargetsDirectory = "/root/future_tagets"
+
 
 
 repo_path = "/var/www"
@@ -21,7 +24,8 @@ path_to_root_key2 = "/root/keys/root_key2"
 path_to_release_key = "/root/keys/timestamp_key"
 path_to_timestamp_key = "/root/keys/timestamp_key"
 
-
+#finds current week
+#week = datetime.date(datetime.now()).strftime("%U") 
 
 #check key paths
 def checkKey(path_to_key):
@@ -44,7 +48,8 @@ path_to_release_key = checkKey(path_to_release_key)
 path_to_timestamp_key = checkKey(path_to_release_key)
 
 
-
+#coppy new targets stop the service while creating new metadata
+distutils.dir_util.copy_tree(fromDirectory, toDirectory)
 
 
 #there are 2 weeks, there 2 folders that get toggeled every week
@@ -97,6 +102,6 @@ repository.timestamp.load_signing_key(private_timestamp_key)
 repository.write()
 distutils.dir_util.copy_tree(fromDirectory, toDirectory)
 
-
+#continue serving since new metadata is generated
 
 

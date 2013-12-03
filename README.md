@@ -308,3 +308,5 @@ One of the important aspects that we need to look at is how well TUF and 0instal
 Initial results are good. 0install + TUF works well. 
 
 The overhead that is created by implementing 0install with TUF is very negligible, we generated the metadata for the 79 applications and the size of the files is around 22.31KB. 
+
+In the future: With greater number of application targets (XMLs) can be splitted into bins (path_hashed) to lower amount of metadata needed for downloading (considering scalability).

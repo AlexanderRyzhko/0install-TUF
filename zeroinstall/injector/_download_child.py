@@ -3,14 +3,16 @@
 
 import sys, os, socket, ssl
 
+from time import sleep
 from zeroinstall import _
 from zeroinstall.injector import download
 from zeroinstall.support import ssl_match_hostname
 
-#TUF Interposition Imports and Configuration
 import tuf.interposition
+
 from tuf.interposition import urllib_tuf as urllib3
 from tuf.interposition import urllib2_tuf as urllib4
+
 tuf.interposition.configure(filename="/usr/local/lib/python2.7/dist-packages/zeroinstall/injector/tuf.interposition.json")
 
 
@@ -87,7 +89,8 @@ for klass in [urllib2.ProxyHandler, urllib2.UnknownHandler, urllib2.HTTPHandler,
 		       urllib2.FTPHandler, urllib2.HTTPErrorProcessor, MyHTTPSHandler]:
 	_my_urlopen.add_handler(klass())
 
-def download_in_thread(url, target_file, if_modified_since, notify_done):
+#Modified function signature to add support for safe_download
+def download_in_thread(url, target_file, if_modified_since, notify_done,expected_size=None):
 	"""@type url: str
 	@type target_file: file"""
 	'''
@@ -98,7 +101,6 @@ def download_in_thread(url, target_file, if_modified_since, notify_done):
 		#print ("Download url", url)
 		
 		if url.startswith('http:') or url.startswith('https:') or url.startswith('ftp:'):
-                #Pawan Rao: Original application code commented out below
 			#req = urllib2.Request(url)
 			#if url.startswith('http:') and if_modified_since:
 			#	req.add_header('If-Modified-Since', if_modified_since)
@@ -107,11 +109,8 @@ def download_in_thread(url, target_file, if_modified_since, notify_done):
 			
 		else:
 			raise Exception(_('Unsupported URL protocol in: %s') % url)
-
-		#Pawan Rao: Original Application download code commented out below
-		#Start of commented original download code
-		
-		#if sys.version_info[0] > 2:
+		'''
+		if sys.version_info[0] > 2:
 			# Python 3
 			#while True:
 			#	try:
@@ -122,53 +121,56 @@ def download_in_thread(url, target_file, if_modified_since, notify_done):
 			#	target_file.write(data)
 			#	target_file.flush()
 						
-		#else:
-			#print "Child downloading\n"
-			#try:
-			#	sock_recv = src.fp._sock.recv	# Python 2
-			#except AttributeError:
-			#	sock_recv = src.fp.fp._sock.recv	# Python 2.5 on FreeBSD
-			#while True:
-			#	data = sock_recv(256)
-			#	if not data: break
-			#	target_file.write(data)
-			#	target_file.flush()
-			#	print (os.path.abspath(target_file.name))
-
-		
-		#End of commented original download code
-		
-		#Pawan Rao: TUF Interposition code starts here. All downloads goes through TUF.
-		#urllib.open(url) returns a file object and that is written to 0install's target file
-		doc=None
-		if sys.version_info[0] > 2:
-			#Python 3
-			try:
-				#Using TUF interposition for Python 3. Returns the package fetched
-				doc = urllib4.urlopen(url)
-			except Exception,e:
-				raise (e)
 		else:
-			#Python 2
+			#print "Child downloading\n"
 			try:
-				#Using TUF interpostition for Python 2. Returns the package fetched
-				doc = urllib3.urlopen(url)
-			except Exception,e:
-				raise e
-			
-		#Write the data from the package fetched by TUF to 0install target file					
-		while True:
-			try:
-				#Read data 256 bytes at a time. This is an optmization in case of large packages
-				data = doc.read(256)
-			except IncompleteRead as ex:
-				data = ex.partial
-			if not data: break
+				sock_recv = src.fp._sock.recv	# Python 2
+			except AttributeError:
+				sock_recv = src.fp.fp._sock.recv	# Python 2.5 on FreeBSD
+			while True:
+				data = sock_recv(256)
+				if not data: break
+				target_file.write(data)
+				target_file.flush()
+				#print (os.path.abspath(target_file.name))
+
+		'''
+		doc=None
+		if url.endswith("xml"):
+			if sys.version_info[0] > 2:
+				#Python 3
+				try:
+					#Using TUF interposition for Python 3. Returns the package fetched
+					doc = urllib4.urlopen(url)
+				except Exception,e:
+					raise (e)
+			else:
+				#Python 2
+				try:
+					#Using TUF interpostition for Python 2. Returns the package fetched
+					doc = urllib3.urlopen(url)
+				except Exception,e:
+					raise e
+			#Write the data from the package fetched by TUF to 0install target file					
+			while True:
+				try:
+					#Read data 256 bytes at a time. This is an optmization in case of large packages
+					data = doc.read(256)
+				except IncompleteRead as ex:
+					data = ex.partial
+				if not data: break
+				target_file.write(data)
+				target_file.flush()
+		else:
+			#Safe Download Code added here
+			from tuf import download as tufdownload
+			doc = tufdownload.safe_download(url,expected_size)
+			#Should read fixed size bytes at a time but currently bug with tuf.util.TempFile.read(size)
+			data = doc.read()
 			target_file.write(data)
 			target_file.flush()
-			
-		#End of TUF interposition and download code
-			
+			#End of Safe Download Code
+					
 		notify_done(download.RESULT_OK)
 		
 	except (urllib2.HTTPError, urllib2.URLError, HTTPException, socket.error) as ex:

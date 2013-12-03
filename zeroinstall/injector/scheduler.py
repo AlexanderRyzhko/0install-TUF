@@ -112,7 +112,7 @@ def _spawn_thread(step):
 			thread_blocker.trigger(ex)
 			return False
 		tasks.get_loop().call_soon_threadsafe(wake_up_main)
-	child = threading.Thread(target = lambda: download_in_thread(step.url, step.dl.tempfile, step.dl.modification_time, notify_done))
+	child = threading.Thread(target = lambda: download_in_thread(step.url, step.dl.tempfile, step.dl.modification_time, notify_done,step.dl.expected_size))
 	child.daemon = True
 	child.start()
 

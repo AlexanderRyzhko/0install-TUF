@@ -2,7 +2,7 @@
 Script to add the target paths
 Add the targets to unclaimed
 '''
-from datetime import *
+#from datetime import *
 from tuf.libtuf import *
 
 
@@ -17,7 +17,7 @@ path_to_release_key = "/root/keys/timestamp_key"
 path_to_timestamp_key = "/root/keys/timestamp_key"
 
 #finds current week
-week = datetime.date(datetime.now()).strftime("%U") 
+#week = datetime.date(datetime.now()).strftime("%U") 
 
 #check key paths
 def checkKey(path_to_key):
@@ -44,7 +44,7 @@ path_to_timestamp_key = checkKey(path_to_release_key)
 
 
 #there are 2 weeks, there 2 folders that get toggeled every week
-targets_path = targets_path + str(int(week) % 2) +'/'
+#targets_path = targets_path + str(int(week) % 2) +'/'
 
 
 

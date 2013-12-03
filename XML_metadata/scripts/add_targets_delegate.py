@@ -102,6 +102,6 @@ repository.timestamp.load_signing_key(private_timestamp_key)
 repository.write()
 distutils.dir_util.copy_tree(newMetaDir, metaDir)
 
-#continue serving since new metadata is generated
+
 
 

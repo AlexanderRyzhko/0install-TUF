@@ -7,8 +7,8 @@ from tuf.libtuf import *
 import distutils.core
 
 # copy subdirectory example
-fromDirectory = "/var/www/metadata.staged"
-toDirectory = "/var/www/metadata"
+newMetaDir = "/var/www/metadata.staged"
+metaDir = "/var/www/metadata"
 tagetsDirectory = "/var/www/tagets"
 futureTargetsDirectory = "/root/future_tagets"
 
@@ -49,7 +49,7 @@ path_to_timestamp_key = checkKey(path_to_release_key)
 
 
 #coppy new targets stop the service while creating new metadata
-distutils.dir_util.copy_tree(fromDirectory, toDirectory)
+distutils.dir_util.copy_tree(futureTargetsDirectory, tagetsDirectory)
 
 
 #there are 2 weeks, there 2 folders that get toggeled every week
@@ -100,7 +100,7 @@ repository.timestamp.load_signing_key(private_timestamp_key)
 
 # Generate new versions of all the top-level metadata.
 repository.write()
-distutils.dir_util.copy_tree(fromDirectory, toDirectory)
+distutils.dir_util.copy_tree(newMetaDir, metaDir)
 
 #continue serving since new metadata is generated
 

@@ -289,7 +289,7 @@ There are two main problems that arise here with the implementation of 0install 
 Developer uploads the new xml files to a secure folder on 0install. Every fortnight when the update needs to be pushed the TUF metadata is generated and pushed to production from dev environment.
 
 2. What happens if a client downloads files during an update?
-If the feed files are getting updated and the client is interrupted in that case. We are propose to have a sleep function on client so if the feed files are being replaced, the user does not get a bad hash error. So 0install client tries to get the XML after shorted sleep and continues the download.
+New propose is 0install tries to download again after a fixed period of time (e.g. 10 sec), so if the metadata is being updated the user does not get a bad hash error and updates successfully
 
 
 SECURITY OF 0install + TUF 

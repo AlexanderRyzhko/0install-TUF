@@ -305,9 +305,6 @@ PERFORMANCE OF 0install + TUF
 
 One of the important aspects that we need to look at is how well TUF and 0install work together. 
 
-One initial results are good. 0install + TUF works well. 
+Initial results are good. 0install + TUF works well. 
 
-The overhead that is created by implementing 0install with TUF is very negligible, right now the XML file that the user has to download to launch a package is around 2.5KB. We also calculated that the average size of the TUF metadata is 2 KB or 2.5 KB per package so the total size of the file that the user would have to download would be 2.5 KB + 2 KB * n where n is number of packages. With current 150 application 302.5 KB will have to be downloaded. 
-
-In the future:
-With greater number of application targets (XMLs) can be splitted into bins (path_hashed) to lower amount of metadata needed for downloading (considering scalability).
+The overhead that is created by implementing 0install with TUF is very negligible, we generated the metadata for the 79 applications and the size of the files is around 22.31KB. 

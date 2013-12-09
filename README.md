@@ -1,6 +1,18 @@
 0install-TUF
 ============
 
+Why use 0install + TUF
+----------------------
+
+There are a few reasons why using 0install + TUF makes more sense then just using TUF
+
+* Uses TUF for updating the pacakges 
+* 4 keys are used instead of a single developer key 
+* Installation is simple 
+* You know exactly know the source of the package  
+* Impersonating developers is harder 
+* Protects the user from some of the update vulnerabilities 
+
 
 0install INTRODUCTION
 ---------------------

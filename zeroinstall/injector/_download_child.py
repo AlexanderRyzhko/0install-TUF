@@ -166,6 +166,17 @@ def download_in_thread(url, target_file, if_modified_since, notify_done,expected
 			from tuf import download as tufdownload
 			doc = tufdownload.safe_download(url,expected_size)
 			#Should read fixed size bytes at a time but currently bug with tuf.util.TempFile.read(size)
+			'''
+			while True:
+				try:
+				#Read data 256 bytes at a time. This is an optmization in case of large packages
+					data = doc.read(256)
+				except IncompleteRead as ex:
+					data = ex.partial
+				if not data: break
+				target_file.write(data)
+				target_file.flush()
+			'''
 			data = doc.read()
 			target_file.write(data)
 			target_file.flush()

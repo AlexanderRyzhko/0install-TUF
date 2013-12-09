@@ -551,15 +551,7 @@ class InterfaceBrowser(object):
 						expected = (expected or 0) + dl.expected_size
 					so_far += dl.get_bytes_downloaded_so_far()
 
-					#Code added to check endless data
-					if expected:
-						if so_far > expected:
-							dl.abort()
-							raise Exception("Download aborted as size exceeded expected")
-							exit(1)
-					#End of additional code
-					
-										
+						
 				if expected:
 					summary = ngettext("(downloading %(downloaded)s/%(expected)s [%(percentage).2f%%])",
 							   "(downloading %(downloaded)s/%(expected)s [%(percentage).2f%%] in %(number)d cdownloads)",downloads)

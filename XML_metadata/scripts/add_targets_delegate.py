@@ -14,11 +14,11 @@ if(not(path_to_server_root)):
 
 newMetaDir = path_to_server_root + "/metadata.staged"
 metaDir = path_to_server_root + "/metadata"
-tagetsDirectory = path_to_server_root + "/tagets"
+targetsDirectory = path_to_server_root + "/targets"
 path_to_f_targets = raw_input("Enter the path to futer targets, or press enter for /var/www: ")
-if(not(path_to_f_targetstargets)):
+if(not(path_to_f_targets)):
 	path_to_f_targets = "/var/www"
-futureTargetsDirectory = path_to_f_targets + "/future_tagets"
+futureTargetsDirectory = path_to_f_targets + "/future_targets"
 
 
 
@@ -27,7 +27,7 @@ futureTargetsDirectory = path_to_f_targets + "/future_tagets"
 #repo_path = "/var/www"
 repo_path = path_to_server_root
 #targets_path = "/var/www/targets/"
-tagets_path = futureTargetsDirectory
+targets_path = targetsDirectory 
 
 #keys should be off-line, example path to USB stick
 path_to_target_key = "/root/keys/targets_key"
@@ -60,8 +60,8 @@ path_to_release_key = checkKey(path_to_release_key)
 path_to_timestamp_key = checkKey(path_to_release_key)
 
 
-
-#distutils.dir_util.copy_tree(futureTargetsDirectory, tagetsDirectory)
+#coppying new targets and metadata. Stop the service while creating new metadata!
+distutils.dir_util.copy_tree(futureTargetsDirectory, targetsDirectory)
 
 
 #there are 2 weeks, there 2 folders that get toggeled every week
@@ -114,7 +114,7 @@ repository.timestamp.load_signing_key(private_timestamp_key)
 #coppying new targets and metadata. Stop the service while creating new metadata!
 repository.write()
 distutils.dir_util.copy_tree(newMetaDir, metaDir)
-distutils.dir_util.copy_tree(futureTargetsDirectory, tagetsDirectory)
+
 #comtinue the service
 
 

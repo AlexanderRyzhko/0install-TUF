@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://localhost/test0install.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+  <name>test0install</name>
+  <summary>cures all ills</summary>
+  <description>
+</description>
+  <category>System</category>
+  <implementation doc-dir="FooBar" id="sha1new=e5ea0632269bc18d4292948e68e2ed74684aba7d" license="Freely Distributable" main="FooBar" released="2013-12-10" version="0.1">
+    <archive extract="FooBar-0.1" href="http://localhost/devhost/FooBar-0.1.tar.gz" size="539" type="application/x-compressed-tar"/>
+  </implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJSp2s/AAoJEAhXSqSdiY1g5RcH/1mkS2M8MdynYHfbdXadH6ajgEHtcanvSZI3
+XkjixJF2SXkpcPx1mt31t4ypKuwSPGJzsCfuzTHHSeXcDozJJ1ZJJPsmnwRQ7OzY+gdlJ4imlCg7
+gtdWzrQcyCoYECzsvhx1qqLcGe98Zc6QePDw16Ey6SoT+zXM/jwpb48CjMfQoWPLrpb409ZxiOBq
+AVnMNCYupIXTZd32ScujZak7NT0EUw7SlTH8bNhmgKVZ+mNNAQVCpZZiPcRV9aZbaPqfchQTO9/3
+x4DcRy/iq4oFkidOuUtNeW5F01g9HygwOjDWmYmpTAr/Mvy09kWZNzHRYxiyI6npBnwXgdFksyq1
+73I=
+
+-->

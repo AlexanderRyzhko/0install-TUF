@@ -1,0 +1,26 @@
+{
+ "signatures": [
+  {
+   "keyid": "96e4a47c008ac4148a05c5c8fb8947f1727f2e5e3c49837efd2ff0122db749a2", 
+   "method": "PyCrypto-PKCS#1 PSS", 
+   "sig": "4bb1e0f148a47a27622d1a7bb6039e74b6668ddd97249326d4a1e61b70574887ff06285129f779bb9aa69857d1eec0928d02d143173655b258d96e648a4f8cf548ccf84704d617344d106ad5cc3244102fc733f2efcfeab961392af7551b62b49554b9b22bf53b637dd3ecd14b70ec0b31bb9c9462927c95ec103338d2ab40f9fab02d84b7bed90d0417d9dc24973345064aa5909d168965f2173cfba5ae7220c142cbebc36f04e8ddcf5210504f2c8cc2827bf0d652f3b0a42175a92efc89a1efd3b002013e77c58e297ade30d0fed1534b262a63971e27fa1b754d7d1347da8b2ee731b8c4e8aca986516f1bf4608e5bd3630ea57ca7c71e01cc938214e300edb9ca63bb7a69b8cfc10af0e8cd03d081e1a1fc17e18e8feefbbe8200c342b31d7337fe9a71f320fbff835ebabf507f8db6f64ee93530ab1bb83e370a815c4b15a7a1e81429e54f0d4b270f7df34a6b477f873c6caa420d0a38fc7b1ad5a1421e6fc488611be078c5167e35e451e441d54fa04f41342b38bc75dda29ae4e4f9"
+  }
+ ], 
+ "signed": {
+  "_type": "Targets", 
+  "delegations": {
+   "keys": {}, 
+   "roles": []
+  }, 
+  "expires": "2014-03-12 03:04:56 UTC", 
+  "targets": {
+   "test0install.xml": {
+    "hashes": {
+     "sha256": "1ce2b2d0fd5d9f00c22363510241bea2bcd7a319c2fafe17a7fcdad815479806"
+    }, 
+    "length": 1078
+   }
+  }, 
+  "version": 1
+ }
+}

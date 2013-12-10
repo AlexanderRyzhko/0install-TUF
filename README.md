@@ -6,6 +6,7 @@ Why use 0install + TUF
 
 There are a few reasons why using 0install + TUF makes more sense then just using 0install
 
+* Safe and simple to use
 * Uses TUF for updating the pacakges 
 * 5 keys are used instead of a single developer key 
 * Installation is simple 

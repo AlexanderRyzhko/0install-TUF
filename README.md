@@ -223,7 +223,7 @@ Also, there is no process where a developer claims a package. In the future, whe
 Note: The reason we have suggested the changes here is because, there is no validation done for who has created the package, and to validate developers as well. 
 
 
-CHNAGES IN THE DEVELOPER END
+CHANGES IN THE DEVELOPER END
 ----------------------------
 
 Developer's now will have to register with 0install before developing package. 
